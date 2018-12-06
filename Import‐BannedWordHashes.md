@@ -1,6 +1,8 @@
 ## Description
 The ```Import-BannedWordHashes``` cmdlet will import a file containing newline-separated NTLM hashes into the banned word store. 
 
+The NTLM password files from [haveibeenpwned.com](https://haveibeenpwned.com/passwords) can be imported directly without modification using this cmdlet. Ensure you download the "sorted-by-hash" version of the file for the best import performance.
+
 ## Syntax
 ```
 Import-BannedWordHashes -Filename <string> -Sorted <boolean> -BatchSize <int>
