@@ -6,7 +6,7 @@ The ```Open-Store``` cmdlet connects the PowerShell module to a new or existing 
 Open-Store -Path <path>
 ```
 ## Parameters
-##### Path
+##### `Path`
 Required. The full path to the store you want to open. 
 
 ## Examples
