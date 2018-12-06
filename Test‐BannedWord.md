@@ -9,10 +9,10 @@ Test-BannedWord -Hash <byte[]>
 ```
 
 ## Parameters
-##### Value
+##### `Value`
 Required. The string to test. [[Normalization rules]] are applied to this string before it is checked against the store
 
-##### Hash
+##### `Hash`
 Required. A binary hash to test. A hash cannot be normalized, so it is tested as-is.
 
 ## Return value
