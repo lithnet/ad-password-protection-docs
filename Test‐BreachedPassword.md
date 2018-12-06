@@ -9,10 +9,10 @@ Test-BreachedPassword -Hash <byte[]>
 ```
 
 ## Parameters
-##### Value
+##### `Value`
 Required. The string to test. 
 
-##### Normalized
+##### `Normalized`
 Optional. If specified, [[normalization rules]] are applied to the password before being checked against the breached password store. To test against the banned word store, use the [[Test‐BannedWord]] cmdlet instead.
 
 ##### Hash
