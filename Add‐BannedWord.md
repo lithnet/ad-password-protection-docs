@@ -1,5 +1,5 @@
 ## Description
-The ```Add-BannedWord``` cmdlet takes a string of text, normalizes it, and adds it to the banned word store. 
+The ```Add-BannedWord``` cmdlet takes a string of text, applies the [[normalization rules]] to it, and adds it to the banned word store. 
 
 ## Syntax
 ```
