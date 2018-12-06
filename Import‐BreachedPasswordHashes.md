@@ -8,7 +8,7 @@ The NTLM password files from [haveibeenpwned.com](https://haveibeenpwned.com/pas
 Import-BreachedPasswordHashes -Filename <string> -Sorted <boolean> -BatchSize <int>
 ```
 ## Parameters
-##### Filename
+##### `Filename`
 Required. The of the file containing the NTLM hashes. Each hash should be in hex format, be 32 characters in length, and each record must appear on a new line. The hash can optionally end with a colon and anything after the colon character is ignored. 
 
 The following list shows the allowed formats. The hashes are not case sensitive.
@@ -19,10 +19,10 @@ e22e04519aa757d12f1219c4f31252f4:3
 e22e04519aa757d12f1219c4f31252f4:
 ```
 
-#### Sorted
+##### `Sorted`
 Optional. A boolean value indicating if the hashes in the file are sorted in ascending order or not. The cmdlet will optimize the type of import it performs based on this parameter. A sorted file will allow a much faster import of data into the store. However, there is a significant penalty if you specify that the file is sorted when it is not. If this parameter is omitted, the cmdlet will guess which algorithm to use by reading the first 1000 lines of the file. If those first 1000 lines are all in order, a sorted import will be performed.
 
-#### BatchSize
+##### `BatchSize`
 Optional. Specifies how many hashes to read from an unsorted file before committing to disk. This parameter has no effect on a sorted file. 
 
 In order to minimize the impact of memory usage when importing unsorted hashes, the hashes are read from the file and committed to the store in batches of this size. The larger the batch size, the faster the import, but the more memory is used. If left unspecified, the default value of 5,000,000 is used which provides an adequate balance of memory usage and speed.
