@@ -20,26 +20,30 @@ Test-ADUserPasswordIsPwned -Sid <string> -Server <string> -Credential <PSCredent
 ```
 
 ## Parameters
-##### AccountName
+##### `AccountName`
 Required. The samAccountName of the user who's password should be tested.
 
-##### Domain
+##### `Domain`
 Required. The domain of the user who's password should be tested.
 
-##### Upn
+##### `Upn`
 Required. The userPrincipalName attribute of the user who's password should be tested.
 
-##### Sid
+##### `Sid`
 Required. The string-representation of the SID of the user who's password should be tested.
 
-##### Server
+##### `Server`
 Optional. The server to retrieve the password hash from. If omitted, the cmdlet will use the value of the logged on-user's `UserDNSDomain` environment variable.
 
-##### Credential
+##### `Credential`
 Optional. The credentials to use to retrieve the password has from the directory. If omitted, the credentials of the currently logged on user are used.
 
-##### OutBadHashOnMatch
+##### `OutBadHashOnMatch`
 The cmdlet ordinarily returns a `$true` `$false` value to indicate if the password is in the store. If this switch is specified, the cmdlet will output the raw NTLM hash when a match is found in the store, and nothing if there was no match.
+
+## Return value
+The cmdlet returns a boolean value indicating whether the user's password was found in the breached password store. 
+However, if the `OutBadHashOnMatch` switch is specified, and the user's password was found in the breached password store, the cmdlet will return the breached password hash in hex format.
 
 ## Examples
 Test a user password using the default credentials against the default domain
