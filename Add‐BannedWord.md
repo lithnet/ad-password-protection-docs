@@ -15,7 +15,4 @@ The following example adds a single banned word to the store
 Add-BannedWord -Value "password"
 ```
 
-You can import a file of newline-separated words using the PowerShell pipeline
-```powershell
-Get-Content -Path C:\words\english-dictionary.txt | Add-BannedWord
-```
+To import a file of breached passwords, use the [[Import‐BannedWords]] or [[Import‐BannedWordHashes]] cmdlets
