@@ -62,8 +62,8 @@ True
 
 Test a user password, specifying a server name and prompting for credentials for the operation
 ```powershell
-# cmdlet returns the hash when a breached password was found
 PS> Test-ADUserPasswordIsPwnd -Upn ryan@lithnet.io -Server dc1.lithnet.local -Credentials (Get-Credential)
+False
 ```
 
 Test a user password using the samAccountName of the user, and return the hash if a breached password was detected
