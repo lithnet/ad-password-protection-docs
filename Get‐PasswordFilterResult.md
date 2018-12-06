@@ -6,13 +6,13 @@ The ```Get-PasswordFilterResult``` cmdlet allows you to programatically test pas
 Get-PasswordFilterResult -Password <string> -Username <string> -Fullname <string> -IsSetOperation <bool>
 ```
 ## Parameters
-##### Password
+##### `Password`
 Required. The password to test
-##### Username
+##### `Username`
 Required. The username of the user who would be changing their password
-##### Fullname
+##### `Fullname`
 Required. The full name of the user who would be changing their password
-##### IsSetOperation
+##### `IsSetOperation`
 Optional. A boolean value indicating whether this should simulate a password set operation. The default value is false if not specified, which indicates that a password change operation should be simulated.
 
 ## Return value
