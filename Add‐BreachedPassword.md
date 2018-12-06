@@ -6,7 +6,7 @@ The ```Add-BreachedPassword``` cmdlet and a string into the breached password st
 Add-BreachedPassword -Value "thisisabadpassword"
 ```
 ## Parameters
-##### Password
+##### Value
 Required. The password to add to the breached password store 
 
 ## Examples
