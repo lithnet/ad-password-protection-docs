@@ -5,8 +5,9 @@ The ```Add-BannedWord``` cmdlet takes a string of text, applies the [[normalizat
 ```
 Add-BannedWord -Value <string>
 ```
+
 ## Parameters
-##### Value
+##### `Value`
 Required. The string of text to add to the store. [[Normalization rules]] will be applied to the string before it is committed to the store 
 
 ## Examples
