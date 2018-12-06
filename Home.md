@@ -3,5 +3,6 @@
 The Lithnet Active Directory Password filter enhances the options available to an organization for protecting their accounts in Active Directory with strong passwords.
 
 * [[Installation guide]]
+* [[Understanding the store]]
 * [[PowerShell reference]]
 * [[Group policy reference]]
