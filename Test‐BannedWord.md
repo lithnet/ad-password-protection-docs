@@ -3,13 +3,13 @@ The ```Test-BannedWord``` cmdlet checks to see if a specified string matches a v
 
 ## Syntax
 ```
-Test-BannedWord -Word <string>
+Test-BannedWord -Value <string>
 
 Test-BannedWord -Hash <byte[]>
 ```
 
 ## Parameters
-##### Word
+##### Value
 Required. The string to test. [[Normalization rules]] are applied to this string before it is checked against the store
 
 ##### Hash
@@ -24,10 +24,10 @@ The cmdlet returns a boolean value indicating whether the input string or hash m
 PS> Add-BannedWord -Value password
 
 # Test the exact word and ensure it is found
-PS> Test-BannedWord -Word password
+PS> Test-BannedWord -Value password
 True
 
 # Test a modification of the banned word, and ensure it is found
-PS> Test-BannedWord -Word P@ssw0rd!
+PS> Test-BannedWord -Value P@ssw0rd!
 True
 ```
