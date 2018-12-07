@@ -21,7 +21,7 @@ The group policy settings are found under `Computer Configuration\Policies\Admin
 #### Complexity policies
 | Setting | Explanation |
 | --- | --- |
-| Passwords must meet the specified number of complexity points | The password filter allows you to set a points-based threshold for password complexity. You must specify the number of points a password must reach to be approved. You can then assign points based on the character make up of the password. See the page on [[configuring a point-based complexity policy]] for more information | 
+| Passwords must meet the specified number of complexity points | The password filter allows you to set a points-based threshold for password complexity. You must specify the number of points a password must reach to be approved. You can then assign points based on the character make up of the password. See the page on [[configuring a points-based complexity policy]] for more information | 
 | Enable length-based complexity rules | When enabled, enforces password complexity rules based on the length of the supplied password. This policy allows you to provide granular complexity requirements based on password length. You can reward longer passwords with less complex requirements. See the page on [[configuring a length-based complexity policy]] for more information |
 | Minimum password length | When enabled, specifies the minimum password length to enforce. If disabled or not configured, no minimum password length is enforced | 
 
