@@ -9,7 +9,7 @@ If you plan on using the breached password functionality, then once the module i
 * [[Configure the password group policy|Configure group policy]]
 In order for the password filter to become active, you need to configure it via a group policy that applies to your domain controllers. 
 
-* [[Test the filter]]
+* [[Test the password filter|Testing the password filter]]
 Once filter has been installed and configured, you can start testing the password filter.
 
 * [[Audit existing passwords]]
