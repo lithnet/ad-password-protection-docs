@@ -1,6 +1,6 @@
 The store contains the list of breached passwords and banned words you want to prevent from being used in your environment. You need to use the PowerShell module to build your store. 
 
-# Creating a new store
+## Creating a new store
 First, create a new empty folder for the store
 ```powershell
 mkdir D:\password-filter\store
@@ -11,7 +11,7 @@ Next, import the PowerShell module and open the store folder
 Import-Module PasswordFilterPS
 Open-Store -Path "D:\password-filter\store"
 ```
-# Add breached passwords to the store
+## Add breached passwords to the store
 The PowerShell module is now ready to use the new store folder. First, import your breached passwords. We recommend starting with the [Have I Been Pwned](https://haveibeenpwned.com/Passwords) NTLM password list. Download the version that says `(ordered by hash)` for the best performance. Once you have the download, import them into your new store.
 
 ```powershell
@@ -37,7 +37,7 @@ To test to see if a password is in the breached password store, use the [[Testâ€
 Test-BreachedPassword -Password p@ssw0rd
 ```
 
-# Add banned words to the store
+## Add banned words to the store
 The password filter can also protect against common substitutions by normalizing incoming passwords, and checking them against the banned word store. For example, adding the word `lithnet` to the banned word store, will prevent common variations such as `lithnet2018` `l1thn3t` `Lithnet!` from being used. You can read more about the [[normalization rules]] to understand how this works in more detail. The banned word store contains the list of these words you want to prevent passwords being based on. You can load in common names in your organization, or load in the entire dictionary. The [[Import-BannedWords]] cmdlet is used to import a file of new-line separated words.
 
 ```powershell
