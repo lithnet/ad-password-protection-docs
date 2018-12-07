@@ -10,5 +10,16 @@ The password filter logs events to the `Application` log on the domain controlle
 | 9 | Error | There was a problem opening the store file. Check that the store folder exists and is accessible | |
 | 8193 | Warning | The password %1 request was rejected. The module is configured to deny password requests when an error occurs. | | 
 | 8194 | Warning | The password %1 request for %2 (%3) was rejected because its length (%4) did not meet the minimum configured length (%5). |
-| 8195 | | | | 
+| 8195 | Warning | The password %1 request for %2 (%3) was rejected because it matched a password in the banned password store. | | 
+| 8196 | Warning | The password %1 request for %2 (%3) was rejected after being normalized because it matched a password in the banned password store. | |
+| 8197 | Warning | The password %1 request for %2 (%3) was rejected because it did not match the approval regular expression. | | 
+| 8198 | Warning | The password %1 request for %2 (%3) was rejected because it matched the rejection regular expression. | |
+| 8199 | Warning | The password %1 request for %2 (%3) was rejected because it achieved only %4 of the required %5 complexity points. | | 
+| 8200 | Warning | The password %1 request for %2 (%3) was rejected because it did not meet the complexity requirements of a password below the specified threshold. | | 
+| 8201 | Warning | The password %1 request for %2 (%3) was rejected because it did not meet the complexity requirements of a password above the specified threshold. | | 
+| 8202 | Warning | The password %1 request for %2 (%3) was rejected because it contained the account name | |
+| 8203 | Warning | The password %1 request for %2 (%3) was rejected because it contained at least part of the display name | |
+| 8204 | Warning | The password %1 request for %2 (%3) was rejected because it did not meet the complexity requirements of a password of %4 characters. | | 
+| 8205 | Warning | The password %1 request for %2 (%3) was rejected after being normalized because it matched a password in the banned word store. | |
+
 
