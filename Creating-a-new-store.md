@@ -26,25 +26,25 @@ You can also choose to import any plain-text password lists that you have access
 Import-BreachedPasswords -Filename "D:\password-filter\hashes.org-2018.txt"
 ```
 
-If you have individual passwords you want to add, you can use the [[Add-BreachedPassword]] cmdlet
+If you have individual passwords you want to add, you can use the [[Add‐BreachedPassword]] cmdlet
 
 ```powershell
 Add-BreachedPassword -Password p@ssw0rd
 ```
 
-To test to see if a password is in the breached password store, use the [[Test-BreachedPassword]] cmdlet. The cmdlet will return `true` if the password was found in the breached store.
+To test to see if a password is in the breached password store, use the [[Test‐BreachedPassword]] cmdlet. The cmdlet will return `true` if the password was found in the breached store.
 ```
 Test-BreachedPassword -Password p@ssw0rd
 ```
 
 # Add banned words to the store
-The password filter can also protect against common substitutions by normalizing incoming passwords, and checking them against the banned word store. For example, adding the word `lithnet` to the banned word store, will prevent common variations such as `lithnet2018` `l1thn3t` `Lithnet!` from being used. You can read more about the [[normalization process]] to understand how this works in more detail. The banned word store contains the list of these words you want to prevent passwords being based on. You can load in common names in your organization, or load in the entire dictionary. The [[Import-BannedWords]] cmdlet is used to import a file of new-line separated words.
+The password filter can also protect against common substitutions by normalizing incoming passwords, and checking them against the banned word store. For example, adding the word `lithnet` to the banned word store, will prevent common variations such as `lithnet2018` `l1thn3t` `Lithnet!` from being used. You can read more about the [[normalization rules]] to understand how this works in more detail. The banned word store contains the list of these words you want to prevent passwords being based on. You can load in common names in your organization, or load in the entire dictionary. The [[Import-BannedWords]] cmdlet is used to import a file of new-line separated words.
 
 ```powershell
 Import-BannedWords -Filename "D:\password-filter\english-dictionary-words.txt"
 ```
 
-To add individual words use the [[Add-BannedWord]] cmdlet
+To add individual words use the [[Add‐BannedWord]] cmdlet
 
 ```powershell
 Add-BannedWord -Value "lithnet"
