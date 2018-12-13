@@ -6,6 +6,8 @@ First, create a new empty folder for the store
 mkdir D:\password-filter\store
 ```
 
+It is recommended to exempt this folder from anti-virus scans, at least while you are building the store. It can add a considerable amount of time to the process if you do not.
+
 Next, import the PowerShell module and open the store folder
 ```powershell
 Import-Module PasswordFilterPS
