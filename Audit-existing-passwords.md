@@ -9,7 +9,7 @@ You'll need the PowerShell module installed, and utilize the [[Test‐ADuserPass
 The following script will create a CSV file of each user with a breached password
 
 ```powershell
-Import-Module PasswordFilterPS
+Import-Module LithnetPasswordProtection
 
 $file = "get-pwned-users.csv";
 
