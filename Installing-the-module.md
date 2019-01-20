@@ -1,15 +1,15 @@
-Download the latest version of the installer from the [releases](https://github.com/lithnet/ad-password-filter/releases).
+Download the latest version of the installer from the [releases](https://github.com/lithnet/ad-password-protection/releases) page.
 
 In order to enable password filtering on your domain users, the application will need to be installed on all writable domain controllers in the domain. You can optionally install the application on other machines in order to access PowerShell cmdlets and group policy templates. 
 
 ## Installation options
 The installer presents several options for you to choose from
-* Active Directory password filter
+* Lithnet Password Protection for Active Directory
   * Enable password filtering on this computer
   * PowerShell module
 * Group policy templates (ADMX)
 
-### Active Directory password filter
+### Lithnet Password Protection for Active Directory
 This is the component that contains the logic to test passwords against your policy. It is required to be installed to use any of the other functions
 
 ### Enable password filtering on this computer
