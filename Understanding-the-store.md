@@ -1,4 +1,4 @@
-The Lithnet Password Filter can (optionally) test incoming passwords against a breached password store, as well as a banned word store. The stores are a collection of files that represent a database containing the NTLM hashes. The stores are kept locally, and therefore the filter does not require any internet access to perform breached password checking.
+Lithnet Password Protection can (optionally) test incoming passwords against a breached password store, as well as a banned word store. The stores are a collection of files that represent a database containing the NTLM hashes. The stores are kept locally, and therefore the filter does not require any internet access to perform breached password checking.
 
 The stores are created and maintained using [[PowerShell|PowerShell reference]].
 

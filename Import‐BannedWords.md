@@ -18,12 +18,12 @@ In order to minimize the impact of memory usage when importing words, the words 
 ## Examples
 The following example shows how to import a file of words
 ```powershell
-Import-BannedWords -Filename "D:\password-filter\english-dictionary.txt"
+Import-BannedWords -Filename "D:\password-protection\english-dictionary.txt"
 ```
 
 To increase speed when importing a large file when additional memory is available, you can specify a larger batch size
 ```powershell
-Import-BannedWords -Filename "D:\password-filter\english-dictionary.txt" -BatchSize 50000000
+Import-BannedWords -Filename "D:\password-protection\english-dictionary.txt" -BatchSize 50000000
 ```
 
 

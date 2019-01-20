@@ -18,12 +18,12 @@ In order to minimize the impact of memory usage when importing passwords, the pa
 ## Examples
 The following example shows how to import a file of passwords
 ```powershell
-Import-BreachedPasswords -Filename "D:\password-filter\plain-text-passwords.txt"
+Import-BreachedPasswords -Filename "D:\password-protection\plain-text-passwords.txt"
 ```
 
 To increase speed when importing a large file when additional memory is available, you can specify a larger batch size
 ```powershell
-Import-BreachedPasswords -Filename "D:\password-filter\plain-text-passwords.txt" -BatchSize 50000000
+Import-BreachedPasswords -Filename "D:\password-protection\plain-text-passwords.txt" -BatchSize 50000000
 ```
 
 

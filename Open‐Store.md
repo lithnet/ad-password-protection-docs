@@ -11,6 +11,7 @@ Required. The full path to the store you want to open.
 
 ## Examples
 ```powershell
+Import-Module LithnetPasswordProtection
 # Open the non-default store
-Open-Store -Path "D:\password-filter\test-store"
+Open-Store -Path "D:\password-protection\test-store"
 ```

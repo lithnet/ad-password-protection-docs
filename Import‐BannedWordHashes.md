@@ -30,10 +30,10 @@ In order to minimize the impact of memory usage when importing unsorted hashes, 
 ## Examples
 The following example shows how to import a file of hashes, while allowing the cmdlet to determine the sort status and batch size
 ```powershell
-Import-BannedWordHashes -Filename "D:\password-filter\banned-word-hashes.txt"
+Import-BannedWordHashes -Filename "D:\password-protection\banned-word-hashes.txt"
 ```
 
 To increase speed, where additional memory is available, you can specify a larger batch size
 ```powershell
-Import-BannedWordHashes -Filename "D:\password-filter\banned-word-hashes.txt" -Sorted $false -BatchSize 50000000
+Import-BannedWordHashes -Filename "D:\password-protection\banned-word-hashes.txt" -Sorted $false -BatchSize 50000000
 ```

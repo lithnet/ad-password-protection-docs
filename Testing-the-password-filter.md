@@ -15,7 +15,7 @@ The password set request for rnew0001 (Ryan Newington) was rejected because it m
 
 The [[event logging and reporting]] page details all the various event codes the filter can return.
 
-> Note: While the password filter may approve the password, it may still be rejected by Active Directory for reasons such as the minimum password age and password history. If you have other password filters installed, they also may reject the password before it reaches the Lithnet Password Filter
+> Note: While the password filter may approve the password, it may still be rejected by Active Directory for reasons such as the minimum password age and password history. If you have other password filters installed, they also may reject the password before it reaches the Lithnet password Filter
 
 ## Testing the password filter using PowerShell
 You can also test the password filter using PowerShell, on any machine that has the PowerShell module installed, and the password filter group policy applied to it. Using the [[Get‐PasswordFilterResult]] cmdlet, you can call the password filter DLL, and return the exact reason for the rejection, without having to process the password change through Active Directory. 
