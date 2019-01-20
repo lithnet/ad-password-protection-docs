@@ -4,11 +4,11 @@ The best way to test the password filter is by changing or resetting a user's pa
 The password does not meet the length, complexity, or history requirement of the domain
 ```
 
-In order to determine the exact reason for the rejection, you can examine the event logs on the domain controller that processed the password change request. The `Application` log will contain events from `LithnetPasswordFilter` for each password change or set attempt.
+In order to determine the exact reason for the rejection, you can examine the event logs on the domain controller that processed the password change request. The `Application` log will contain events from `LithnetPasswordProtection` for each password change or set attempt.
 
 ```
 Event ID: 8196
-Event Source: LithnetPasswordFilter
+Event Source: LithnetPasswordProtection
 Message:
 The password set request for rnew0001 (Ryan Newington) was rejected because it matched a password in the banned password store.
 ```
