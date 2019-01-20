@@ -1,4 +1,4 @@
-In order to get up and running with the Lithnet Password Filter, you'll need to complete the following steps
+In order to get up and running with Lithnet Password Protection, you'll need to complete the following steps
 
 * [[Install the module|installing the module]]
 You'll need to download and install the application on your writable domain controllers to enable password filtering. You can also install the application on other servers to allow you to use the PowerShell cmdlets and manage the password settings via group policy.
