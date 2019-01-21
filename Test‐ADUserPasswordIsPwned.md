@@ -73,7 +73,7 @@ False
 Test a user password using the samAccountName of the user, and return the hash if a breached password was detected
 ```powershell
 # cmdlet returns the hash when a breached password was found
-PS> Test-ADUserPasswordIsPwnd -AccountName ryan -Domain lithnet -OutBadHashOnMatch
+PS> Test-ADUserPasswordIsPwned -AccountName ryan -Domain lithnet -OutBadHashOnMatch
 8846f7eaee8fb117ad06bdd830b7586c
 
 # cmdlet returns nothing if the password isn't breached
