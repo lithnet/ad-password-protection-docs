@@ -48,25 +48,25 @@ However, if the `OutBadHashOnMatch` switch is specified, and the user's password
 ## Examples
 Test a user password using the default credentials against the default domain
 ```powershell
-PS> Test-ADUserPasswordIsPwnd -AccountName ryan -DomainName lithnet
+PS> Test-ADUserPasswordIsPwned -AccountName ryan -DomainName lithnet
 True
 ```
 
 Test a user password using the UPN of the user
 ```powershell
-PS> Test-ADUserPasswordIsPwnd -Upn ryan@lithnet.io
+PS> Test-ADUserPasswordIsPwned -Upn ryan@lithnet.io
 True
 ```
 
 Test a user password using the SID of the user
 ```powershell
-PS> Test-ADUserPasswordIsPwnd -Sid S-1-5-23423432-2343243211-44423
+PS> Test-ADUserPasswordIsPwned -Sid S-1-5-23423432-2343243211-44423
 True
 ```
 
 Test a user password, specifying a server name and prompting for credentials for the operation
 ```powershell
-PS> Test-ADUserPasswordIsPwnd -Upn ryan@lithnet.io -Server dc1.lithnet.local -Credentials (Get-Credential)
+PS> Test-ADUserPasswordIsPwned -Upn ryan@lithnet.io -Server dc1.lithnet.local -Credentials (Get-Credential)
 False
 ```
 
@@ -77,7 +77,7 @@ PS> Test-ADUserPasswordIsPwnd -AccountName ryan -Domain lithnet -OutBadHashOnMat
 8846f7eaee8fb117ad06bdd830b7586c
 
 # cmdlet returns nothing if the password isn't breached
-PS> Test-ADUserPasswordIsPwnd -AccountName bob -Domain lithnet -OutBadHashOnMatch
+PS> Test-ADUserPasswordIsPwned -AccountName bob -Domain lithnet -OutBadHashOnMatch
 ```
 
 
