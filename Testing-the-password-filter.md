@@ -19,3 +19,5 @@ The [[event logging and reporting]] page details all the various event codes the
 
 ## Testing the password filter using PowerShell
 You can also test the password filter using PowerShell, on any machine that has the PowerShell module installed, and the password filter group policy applied to it. Using the [[Get‐PasswordFilterResult]] cmdlet, you can call the password filter DLL, and return the exact reason for the rejection, without having to process the password change through Active Directory. 
+
+Next: [[Audit existing passwords]]
