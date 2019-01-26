@@ -4,6 +4,8 @@ The group policy templates should be installed on any machine that you need to c
 
 Once you have installed the templates, create a new GPO, which you will link to the OU containing your domain controllers in Active Directory. If you have other computers that you want to be able to use the [[Get‐PasswordFilterResult]] cmdlet on, they will need to have the group policy applied to them as well.
 
+Do note that Active Directory will still process its own password policy rules, so ensure that the built-in Active Directory password policy settings do not conflict with those that you set in the Lithnet Password Protection settings. For example if you are using password complexity settings in this LPPAD, then its recommended to disable Active Directory's complexity settings.
+
 The group policy settings are found under `Computer Configuration\Policies\Administrative Templates\Lithnet\Password Filter`.
 
 ### Settings Reference
