@@ -1,5 +1,7 @@
 ## Description
-The ```Get-PasswordFilterResult``` cmdlet allows you to programatically test passwords against your password policy. Use of this cmdlet requires that the [[group policy]] for the password filter is configured and applied to the computer you are running the cmdlet on. The password filter does not need to be configured to filter passwords on the local computer, but the policy needs to be in place.
+The ```Get-PasswordFilterResult``` cmdlet allows you to programatically test passwords against your password policy. 
+
+This cmdlet does not attempt to change the user's password, nor does it contact the domain controller. Use of this cmdlet requires that the [[group policy|configure group policy]] for the password filter is configured and applied to the computer you are running the cmdlet on. The password filter does not need to be configured to filter passwords on the local computer, but the policy needs to be in place. 
 
 ## Syntax
 ```
