@@ -6,17 +6,22 @@ The ```Test-BreachedPassword``` cmdlet checks to see if a specified string match
 Test-BreachedPassword -Value <string> -Normalize
 
 Test-BreachedPassword -Hash <byte[]>
+
+Test-BreachedPassword -SecureString <SecureString> -Normalize
 ```
 
 ## Parameters
 ##### `Value`
 Required. The string to test. 
 
-##### `Normalized`
+##### `Normalize`
 Optional. If specified, [[normalization rules]] are applied to the password before being checked against the breached password store. To test against the banned word store, use the [[Test‐BannedWord]] cmdlet instead.
 
-##### Hash
+##### `Hash`
 Required. A binary hash to test.
+
+##### `SecureString`
+Required. The string to test as a SecureString. 
 
 ## Return value
 The cmdlet returns a boolean value indicating whether the input string or hash matches a value in the breached password store.
@@ -29,4 +34,7 @@ PS> Add-BreachedPassword -Value password!!!
 # Test the password and ensure it is found
 PS> Test-BreachedPassword -Value password!!!
 True
+
+# Prompt for a breached password to test
+PS> Test-BreachedPassword -SecureString (Read-Host -Prompt "Enter the password to test" -AsSecureString)
 ```
