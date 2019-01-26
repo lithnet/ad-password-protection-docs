@@ -35,3 +35,5 @@ If you are going to use the breached password and banned word functionality, you
 We recommend creating a folder, and replicating it with DFS-R to all the machines that will be performing password filtering. This means all servers have the same copy of the password store, and by having a local copy, they are immune to network or connectivity problems. Otherwise, you can manually copy the store to all nodes, and just ensure that any updates you make are copied to each host as well. If you prefer, you can configure a network share to host the store. You'll just need to ensure that the machine accounts for all servers performing filtering have read access to the share.
 
 See the guide on [[Creating a store]] for instructions on populating your store with breached passwords.
+
+Next: [[Create a new store|Create a new store]]
