@@ -15,7 +15,7 @@ The installer presents several options for you to choose from
 This is the component that contains the logic to test passwords against your policy. It is required to be installed to use any of the other functions
 
 ### Enable password filtering on this computer
-When you select this option, the installer will register the password filter with the local security authority subsystem (LSASS) on the local computer. After a reboot, Windows will pass all password changes to the filter for validation. Note that you still need an appropriate [[group policy]] configured before the filter will be configured to reject any passwords.
+When you select this option, the installer will register the password filter with the local security authority subsystem (LSASS) on the local computer. After a reboot, Windows will pass all password changes to the filter for validation. Note that you still need an appropriate [[group policy|configure group policy]] configured before the filter will be configured to reject any passwords.
 
 When you select this option on a domain controller, this means that the password filter will process any password change or set operations for any user. 
 > Note that as any writable domain controller in a domain can process a password change, the module must be installed on every domain controller. 
