@@ -1,5 +1,4 @@
-![](https://lithnet.github.io/images/logo-ex-small.png)
-# Lithnet Password Protection for Active Directory
+![Lithnet Password Protection for Active Directory](https://lithnet.github.io/images/lppad.png)
 
 * [[Getting started guide]]
 * [[Understanding the store]]
