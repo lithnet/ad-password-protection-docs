@@ -70,3 +70,5 @@ $Searcher.FindAll() | % {
     $message | out-file $file -Append
 } 
 ```
+
+Next: [[Event logging and reporting]]
