@@ -55,3 +55,5 @@ Add-BannedWord -Value "lithnet"
 ```
 
 Once you have completed creating your store, you need to decide how your servers are going to access the store. We recommend using DFS-R to replicate the store to each domain controller, so they each have an up-to-date local copy. Alternatively, you can manually copy it to each domain controller, or share it from a highly-available file server. 
+
+Next: [[Configure the password group policy|Configure group policy]]
