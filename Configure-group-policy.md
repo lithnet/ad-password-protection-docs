@@ -34,3 +34,4 @@ The group policy settings are found under `Computer Configuration\Policies\Admin
 | Reject normalized passwords found in the breached password store | When enabled, incoming passwords will be normalized according to the [[normalization rules]] before being compared to the breached password store | 
 | Reject normalized passwords found in the banned word store | When enabled, incoming passwords will be normalized according to the [[normalization rules]] before being compared to the banned word store. |
 
+Next: [[Test the password filter|Testing the password filter]]
