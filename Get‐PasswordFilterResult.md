@@ -6,10 +6,14 @@ This cmdlet does not attempt to change the user's password, nor does it contact 
 ## Syntax
 ```
 Get-PasswordFilterResult -Password <string> -Username <string> -Fullname <string> -IsSetOperation <bool>
+
+Get-PasswordFilterResult -SecurePassword <SecureString> -Username <string> -Fullname <string> -IsSetOperation <bool>
 ```
 ## Parameters
 ##### `Password`
 Required. The password to test
+##### `SecurePassword`
+Required. The password to test as a SecureString
 ##### `Username`
 Required. The username of the user who would be changing their password
 ##### `Fullname`
@@ -41,7 +45,11 @@ The cmdlet will return one of the following values
 PS> Get-PasswordFilterResult -Password "password" -Username "test-user" -Fullname "John Test"
 Banned
 
-
 PS> Get-PasswordFilterResult -Password "John" -Username "test-user" -Fullname "John Test"
 ContainsFullName
+```
+
+The following example prompts for a password to test
+```powershell
+Get-PasswordFilterResult -SecurePassword (Read-Host -Prompt "Enter the password" -AsSecureString) -Username (Read-Host -Prompt "Enter the user's username") -Fullname (Read-Host -Prompt "Enter the user's full name")
 ```
