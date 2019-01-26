@@ -20,7 +20,7 @@ When you select this option, the installer will register the password filter wit
 When you select this option on a domain controller, this means that the password filter will process any password change or set operations for any user. 
 > Note that as any writable domain controller in a domain can process a password change, the module must be installed on every domain controller. 
 
-When you select this option a member server or workstation, enabling this option will mean that password changes for local accounts are checked by the filter for approval. Password changes for domain accounts are always processed by the domain controller, so this setting has no effect on domain account password changes.
+When you select this option a member server or workstation, enabling this option will mean that password changes for local accounts are checked by the filter for approval. Password changes for domain accounts are always processed by the domain controller, so this setting has no effect for domain account password changes performed on member servers and workstations.
 
 ### PowerShell module 
 The PowerShell module allows you to build your store, add passwords and banned words and test passwords against the policy. 
