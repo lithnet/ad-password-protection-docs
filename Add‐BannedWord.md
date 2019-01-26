@@ -23,7 +23,7 @@ Add-BannedWord -Value "password"
 
 The following example prompts for a word to be added to the store
 ```powershell
-Add-BannedWord -SecureString (Read-Host -AsSecureString)
+Add-BannedWord -SecureString (Read-Host -Prompt "Enter the banned word to add to the store" -AsSecureString)
 ```
 
 To import a file of breached passwords, use the [[Import‐BannedWords]] or [[Import‐BannedWordHashes]] cmdlets
