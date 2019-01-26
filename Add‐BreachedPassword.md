@@ -22,7 +22,7 @@ Add-BreachedPassword -Value "password"
 
 The following example prompts for a password to add to the breached password
 ```powershell
-Add-BreachedPassword -SecureString (Read-Host -AsSecureString)
+Add-BreachedPassword -SecureString (Read-Host -Prompt "Enter the breached password to add to the store" -AsSecureString)
 ```
 
 To import a file of breached passwords, use the [[Import‐BreachedPasswords]] or [[Import‐BreachedPasswordHashes]] cmdlets
