@@ -3,16 +3,26 @@ The ```Add-BreachedPassword``` cmdlet and a string into the breached password st
 
 ## Syntax
 ```
-Add-BreachedPassword -Value "thisisabadpassword"
+Add-BreachedPassword -Value <string>
+
+Add-BreachedPassword -SecureString <SecureString>
 ```
 ## Parameters
 ##### `Value`
 Required. The password to add to the breached password store 
 
+##### `SecureString`
+Required. The password to add to the breached password store as a secure string
+
 ## Examples
 The following example adds a single breached password to the store
 ```powershell
 Add-BreachedPassword -Value "password"
+```
+
+The following example prompts for a password to add to the breached password
+```powershell
+Add-BreachedPassword -SecureString (Read-Host -AsSecureString)
 ```
 
 To import a file of breached passwords, use the [[Import‐BreachedPasswords]] or [[Import‐BreachedPasswordHashes]] cmdlets
