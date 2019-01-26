@@ -1,8 +1,10 @@
-Once you have the application up and running, it can be useful to audit user's current passwords stored in the Active Directory, to see if any of them are in the banned password store. 
+Once you have the application up and running, it can be useful to audit user's current passwords stored in the Active Directory, to see if any of them are in the breached password store. 
+
+This process involves using a PowerShell cmdlet to extract the users password hashes from the Active Directory, and checking to see if a match is found in the breached password store. This procedure can only check for breached passwords, and cannot perform length and complexity validation, as those processes rely on having access to the user's plain-text password, which is not stored in Active Directory.
 
 In order to perform this operation, you need to have the `Replicate Directory Changes All` permission on the domain object, or be a member of the `Domain Admins` group, which has this permission by default. 
 
-This is a security-sensitive operation, and should only be performed from a trusted device, such as the domain controllers themselves. 
+**This is a security-sensitive operation, and should only be performed from a trusted device, such as the domain controllers themselves**
 
 You'll need the PowerShell module installed, and utilize the [[Test‐ADuserPasswordIsPwned]] cmdlet.
 
@@ -70,5 +72,7 @@ $Searcher.FindAll() | % {
     $message | out-file $file -Append
 } 
 ```
+
+Using the results of the script, you could contact the users and ask them to change their password, or force a password change at next logon.
 
 Next: [[Event logging and reporting]]
