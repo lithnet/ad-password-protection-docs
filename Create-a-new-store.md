@@ -20,6 +20,8 @@ The PowerShell module is now ready to use the new store folder. First, import yo
 Import-BreachedPasswordHashes -Filename "D:\password-protection\pwned-passwords-ntlm-ordered-by-hash.txt"
 ```
 
+The raw NTLM hash list from HIBP requires about 17GB of disk space when uncompressed. However, once imported, these hashes only take up 6.75GB of space in the store. Populating the store takes approximately 40mins on a host with 1 x vCPU @ 2.4Ghz with 3.5Gb RAM.
+
 If you have other NTLM hash sets you want to import, you can do so. Just make sure they are in a text file, each separated by a new line.
 
 You can also choose to import any plain-text password lists that you have access to. Hashes.org has a large list of [cracked plain-text passwords](https://hashes.org/left.php) that you can download and import.
