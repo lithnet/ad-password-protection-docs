@@ -6,7 +6,7 @@ In order to perform this operation, you need to have the `Replicate Directory Ch
 
 **This is a security-sensitive operation, and should only be performed from a trusted device, such as the domain controllers themselves**
 
-You'll need the PowerShell module installed, and utilize the [[Test‐ADuserPasswordIsPwned]] cmdlet.
+You'll need the PowerShell module installed, and utilize the [[Test‐IsADUserPasswordCompromised]] cmdlet.
 
 The following script will create a CSV file of each user with a compromised password
 
