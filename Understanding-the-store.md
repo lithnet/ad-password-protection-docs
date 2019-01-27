@@ -3,7 +3,7 @@ Lithnet Password Protection can (optionally) test incoming passwords against a c
 The stores are created and maintained using [[PowerShell|PowerShell reference]].
 
 ## Compromised password store
-The compromised password store contains the NTLM hashes of exact passwords that you want to prevent your users from using. The most commmon usage of this store, is to populate it with hashes from the [haveibeenpwned.com](https://haveibeenpwned.com) compromised password lists (see the [[Import‐CompromisedPasswordHashes]] PowerShell cmdlet for more details). However, you can also add hashes from other sources such as the cracked password lists on [hashes.org](https://hashes.org), or even your own list of known bad passwords. 
+The compromised password store contains the NTLM hashes of exact passwords that you want to prevent your users from using. The most common usage of this store, is to populate it with hashes from the [haveibeenpwned.com](https://haveibeenpwned.com) compromised password lists (see the [[Import‐CompromisedPasswordHashes]] PowerShell cmdlet for more details). However, you can also add hashes from other sources such as the cracked password lists on [hashes.org](https://hashes.org), or even your own list of known bad passwords. 
 
 You can add passwords to the store using the [[Add‐CompromisedPassword]], [[Import‐CompromisedPasswords]] and [[Import‐CompromisedPasswordHashes]] cmdlets.
 

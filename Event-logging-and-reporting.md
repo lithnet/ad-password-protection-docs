@@ -5,7 +5,7 @@ The password filter logs events to the `Application` log on the domain controlle
 | 1 | Error | An unexpected error occurred | The filter encountered an unexpected error and could not process the request |
 | 2 | Warning | The Lithnet AD Password Filter is currently disabled and has not evaluated the password change request | This message appears when the filter is installed and registered with LSASS, but has been disabled and is not evaluating password changes |
 | 4 | Success | Processing a password %1 request for %2 (%3). | Each password set/change attempt will cause this event to be logged |
-| 5 | Success | The password %1 request for %2 (%3) was approved. | This event is logged when a password is appoved by the filter |
+| 5 | Success | The password %1 request for %2 (%3) was approved. | This event is logged when a password is approved by the filter |
 | 8 | Error | An unexpected error occurred | The filter encountered an unexpected win32 error and could not process the request | |
 | 9 | Error | There was a problem opening the store file. Check that the store folder exists and is accessible | The store could not be accessed by the filter. Make sure that `SYSTEM` has permission to read the folder and files if the store is local, if its on a remote share, ensure that the machines computer account has read access to the share |
 | 8193 | Warning | The password %1 request was rejected. The module is configured to deny password requests when an error occurs. |  | 
