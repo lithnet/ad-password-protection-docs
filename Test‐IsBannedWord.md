@@ -1,13 +1,13 @@
 ## Description
-The ```Test-BannedWord``` cmdlet checks to see if a specified string matches a value in the banned word store. The [[normalization rules]] are applied to the string and the resulting value is checked against the store.
+The ```Test-IsBannedWord``` cmdlet checks to see if a specified string matches a value in the banned word store. The [[normalization rules]] are applied to the string and the resulting value is checked against the store.
 
 ## Syntax
 ```
-Test-BannedWord -Value <string>
+Test-IsBannedWord -Value <string>
 
-Test-BannedWord -Hash <byte[]>
+Test-IsBannedWord -Hash <byte[]>
 
-Test-BannedWord -SecureString <SecureString>
+Test-IsBannedWord -SecureString <SecureString>
 ```
 
 ## Parameters
@@ -29,13 +29,13 @@ The cmdlet returns a boolean value indicating whether the input string or hash m
 PS> Add-BannedWord -Value password
 
 # Test the exact word and ensure it is found
-PS> Test-BannedWord -Value password
+PS> Test-IsBannedWord -Value password
 True
 
 # Test a modification of the banned word, and ensure it is found
-PS> Test-BannedWord -Value P@ssw0rd!
+PS> Test-IsBannedWord -Value P@ssw0rd!
 True
 
 # Prompt for a banned word to test
-PS> Test-BannedWord -SecureString (Read-Host -Prompt "Enter the banned word to test" -AsSecureString)
+PS> Test-IsBannedWord -SecureString (Read-Host -Prompt "Enter the banned word to test" -AsSecureString)
 ```

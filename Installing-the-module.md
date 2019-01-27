@@ -26,16 +26,16 @@ When you select this option a member server or workstation, enabling this option
 The PowerShell module allows you to build your store, add passwords and banned words and test passwords against the policy. 
 For managing the password store, the PowerShell module can be installed on any machine that has access to the store folder. 
 For testing passwords, the PowerShell module should be installed on a machine that has the domain's group policy applied to it.
-In order to audit existing user's passwords against the breached password store, we recommend installing this module on the domain controller and running the appropriate cmdlet from there.
+In order to audit existing user's passwords against the compromised password store, we recommend installing this module on the domain controller and running the appropriate cmdlet from there.
 
 ### Group policy templates
 The group policy templates should be installed on any machine that you need to configure the password settings group policy on. We recommend copying the ADMX files to a [central policy store](https://support.microsoft.com/en-au/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra), which will enable you to see and manage the group policy settings from any machine in the domain.
 
 ## Choosing a store path
-If you are going to use the breached password and banned word functionality, you'll need to create a [[password store|Understanding the store]]. The store is a file-based data structure containing the NTLM hashes of the breached passwords and banned words. 
+If you are going to use the compromised password and banned word functionality, you'll need to create a [[password store|Understanding the store]]. The store is a file-based data structure containing the NTLM hashes of the compromised passwords and banned words. 
 
 We recommend creating a folder, and replicating it with DFS-R to all the machines that will be performing password filtering. This means all servers have the same copy of the password store, and by having a local copy, they are immune to network or connectivity problems. Otherwise, you can manually copy the store to all nodes, and just ensure that any updates you make are copied to each host as well. If you prefer, you can configure a network share to host the store. You'll just need to ensure that the machine accounts for all servers performing filtering have read access to the share.
 
-See the guide on [[Creating a store|Create a new store]] for instructions on populating your store with breached passwords.
+See the guide on [[Creating a store|Create a new store]] for instructions on populating your store with compromised passwords.
 
 Next: [[Create a new store|Create a new store]]

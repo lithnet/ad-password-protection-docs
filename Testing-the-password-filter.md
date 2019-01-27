@@ -10,7 +10,7 @@ In order to determine the exact reason for the rejection, you can examine the ev
 Event ID: 8196
 Event Source: LithnetPasswordProtection
 Message:
-The password set request for rnew0001 (Ryan Newington) was rejected because it matched a password in the banned password store.
+The password set request for rnew0001 (Ryan Newington) was rejected because it matched a password in the compromised password store.
 ```
 
 The [[event logging and reporting]] page details all the various event codes the filter can return.

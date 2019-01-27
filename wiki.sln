@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{828B3831-09BD-4CA2-9BD7-B73101E3A325}"
+	ProjectSection(SolutionItems) = preProject
+		_Sidebar.md = _Sidebar.md
+		Add‐BannedWord.md = Add‐BannedWord.md
+		Add‐CompromisedPassword.md = Add‐CompromisedPassword.md
+		Audit-existing-passwords.md = Audit-existing-passwords.md
+		Configure-group-policy.md = Configure-group-policy.md
+		Configuring-a-length-based-complexity-policy.md = Configuring-a-length-based-complexity-policy.md
+		Configuring-a-points-based-complexity-policy.md = Configuring-a-points-based-complexity-policy.md
+		Create-a-new-store.md = Create-a-new-store.md
+		Event-logging-and-reporting.md = Event-logging-and-reporting.md
+		Getting-started-guide.md = Getting-started-guide.md
+		Get‐PasswordFilterResult.md = Get‐PasswordFilterResult.md
+		Home.md = Home.md
+		Import‐BannedWordHashes.md = Import‐BannedWordHashes.md
+		Import‐BannedWords.md = Import‐BannedWords.md
+		Import‐CompromisedPasswordHashes.md = Import‐CompromisedPasswordHashes.md
+		Import‐CompromisedPasswords.md = Import‐CompromisedPasswords.md
+		Installing-the-module.md = Installing-the-module.md
+		Normalization-rules.md = Normalization-rules.md
+		Open‐Store.md = Open‐Store.md
+		PowerShell-reference.md = PowerShell-reference.md
+		Testing-the-password-filter.md = Testing-the-password-filter.md
+		Test‐IsADUserPasswordCompromised.md = Test‐IsADUserPasswordCompromised.md
+		Test‐IsBannedWord.md = Test‐IsBannedWord.md
+		Test‐IsCompromisedPassword.md = Test‐IsCompromisedPassword.md
+		Understanding-the-store.md = Understanding-the-store.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5E2A74A2-31A2-4BEB-A36C-0FF22C426A84}
+	EndGlobalSection
+EndGlobal

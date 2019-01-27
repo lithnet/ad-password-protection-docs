@@ -1,6 +1,6 @@
-Once you have the application up and running, it can be useful to audit user's current passwords stored in the Active Directory, to see if any of them are in the breached password store. 
+Once you have the application up and running, it can be useful to audit user's current passwords stored in the Active Directory, to see if any of them are in the compromised password store. 
 
-This process involves using a PowerShell cmdlet to extract the users password hashes from the Active Directory, and checking to see if a match is found in the breached password store. This procedure can only check for breached passwords, and cannot perform length and complexity validation, as those processes rely on having access to the user's plain-text password, which is not stored in Active Directory.
+This process involves using a PowerShell cmdlet to extract the users password hashes from the Active Directory, and checking to see if a match is found in the compromised password store. This procedure can only check for compromised passwords, and cannot perform length and complexity validation, as those processes rely on having access to the user's plain-text password, which is not stored in Active Directory.
 
 In order to perform this operation, you need to have the `Replicate Directory Changes All` permission on the domain object, or be a member of the `Domain Admins` group, which has this permission by default. 
 
@@ -8,7 +8,7 @@ In order to perform this operation, you need to have the `Replicate Directory Ch
 
 You'll need the PowerShell module installed, and utilize the [[Test‐ADuserPasswordIsPwned]] cmdlet.
 
-The following script will create a CSV file of each user with a breached password
+The following script will create a CSV file of each user with a compromised password
 
 ```powershell
 Import-Module LithnetPasswordProtection
@@ -41,7 +41,7 @@ $Searcher.FindAll() | % {
         return;
     }
 
-    $result = Test-ADUserPasswordIsPwned -UPN $user -server localhost 
+    $result = Test-IsADUserPasswordCompromised -UPN $user -server localhost 
     
     $pwdLastSet = $null
     $lastLogin = $null

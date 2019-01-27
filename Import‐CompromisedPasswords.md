@@ -1,9 +1,9 @@
 ## Description
-The ```Import-BreachedPasswords``` cmdlet will import a file containing new line-separated plain-text passwords into the breached password store. 
+The ```Import-CompromisedPasswords``` cmdlet will import a file containing new line-separated plain-text passwords into the compromised password store. 
 
 ## Syntax
 ```
-Import-BreachedPasswords-Filename <string> -BatchSize <int>
+Import-CompromisedPasswords-Filename <string> -BatchSize <int>
 ```
 
 ## Parameters
@@ -18,12 +18,12 @@ In order to minimize the impact of memory usage when importing passwords, the pa
 ## Examples
 The following example shows how to import a file of passwords
 ```powershell
-Import-BreachedPasswords -Filename "D:\password-protection\plain-text-passwords.txt"
+Import-CompromisedPasswords -Filename "D:\password-protection\plain-text-passwords.txt"
 ```
 
 To increase speed when importing a large file when additional memory is available, you can specify a larger batch size
 ```powershell
-Import-BreachedPasswords -Filename "D:\password-protection\plain-text-passwords.txt" -BatchSize 50000000
+Import-CompromisedPasswords -Filename "D:\password-protection\plain-text-passwords.txt" -BatchSize 50000000
 ```
 
 

@@ -10,8 +10,8 @@ The password filter logs events to the `Application` log on the domain controlle
 | 9 | Error | There was a problem opening the store file. Check that the store folder exists and is accessible | The store could not be accessed by the filter. Make sure that `SYSTEM` has permission to read the folder and files if the store is local, if its on a remote share, ensure that the machines computer account has read access to the share |
 | 8193 | Warning | The password %1 request was rejected. The module is configured to deny password requests when an error occurs. |  | 
 | 8194 | Warning | The password %1 request for %2 (%3) was rejected because its length (%4) did not meet the minimum configured length (%5). |
-| 8195 | Warning | The password %1 request for %2 (%3) was rejected because it matched a password in the breached password store. | | 
-| 8196 | Warning | The password %1 request for %2 (%3) was rejected after being normalized because it matched a password in the breached password store. | |
+| 8195 | Warning | The password %1 request for %2 (%3) was rejected because it matched a password in the compromised password store. | | 
+| 8196 | Warning | The password %1 request for %2 (%3) was rejected after being normalized because it matched a password in the compromised password store. | |
 | 8197 | Warning | The password %1 request for %2 (%3) was rejected because it did not match the approval regular expression. | | 
 | 8198 | Warning | The password %1 request for %2 (%3) was rejected because it matched the rejection regular expression. | |
 | 8199 | Warning | The password %1 request for %2 (%3) was rejected because it achieved only %4 of the required %5 complexity points. | | 

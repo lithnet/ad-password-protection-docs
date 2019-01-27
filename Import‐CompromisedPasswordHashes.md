@@ -1,11 +1,11 @@
 ## Description
-The ```Import-BreachedPasswordHashes``` cmdlet will import a file containing newline-separated NTLM hashes into the breached password store. 
+The ```Import-CompromisedPasswordHashes``` cmdlet will import a file containing newline-separated NTLM hashes into the compromised password store. 
 
 The NTLM password files from [haveibeenpwned.com](https://haveibeenpwned.com/passwords) can be imported directly without modification using this cmdlet. Ensure you download the "sorted-by-hash" version of the file for the best import performance.
 
 ## Syntax
 ```
-Import-BreachedPasswordHashes -Filename <string> -Sorted <boolean> -BatchSize <int>
+Import-CompromisedPasswordHashes -Filename <string> -Sorted <boolean> -BatchSize <int>
 ```
 ## Parameters
 ##### `Filename`
@@ -30,12 +30,12 @@ In order to minimize the impact of memory usage when importing unsorted hashes, 
 ## Examples
 The following example shows how to import a file of hashes, while allowing the cmdlet to determine the sort status and batch size
 ```powershell
-Import-BreachedPasswordHashes -Filename "D:\password-protection\pwned-passwords-ntlm-ordered-by-hash.txt"
+Import-CompromisedPasswordHashes -Filename "D:\password-protection\pwned-passwords-ntlm-ordered-by-hash.txt"
 ```
 
 To increase speed when importing an unsorted file when additional memory is available, you can specify a larger batch size
 ```powershell
-Import-BreachedPasswordHashes -Filename "D:\password-protection\pwned-passwords-ntlm-ordered-by-count.txt" -Sorted $false -BatchSize 50000000
+Import-CompromisedPasswordHashes -Filename "D:\password-protection\pwned-passwords-ntlm-ordered-by-count.txt" -Sorted $false -BatchSize 50000000
 ```
 
 

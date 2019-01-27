@@ -32,8 +32,8 @@ The group policy settings are found under `Computer Configuration\Policies\Admin
 | --- | --- |
 | Reject passwords that contain the user's account name | When enabled, the filter will reject any password that contains the user's account name, provided the account name is greater than 3 characters in length. If disabled, or set to not configured, the password filter will not reject the password if it contains the user's account name |
 | Reject passwords that contain any part of the user's display name | When enabled, the filter will reject any password that contains all or part of the user's display name. If disabled, or set to not configured, the password filter will not reject the password if it contains the user's display name |
-| Reject passwords found in the breached password store | When enabled, passwords will be rejected if they are found in the breached password store. If disabled, or set to not configured, the password filter will not evaluate passwords against the breached password store |
-| Reject normalized passwords found in the breached password store | When enabled, incoming passwords will be normalized according to the [[normalization rules]] before being compared to the breached password store | 
+| Reject passwords found in the compromised password store | When enabled, passwords will be rejected if they are found in the compromised password store. If disabled, or set to not configured, the password filter will not evaluate passwords against the compromised password store |
+| Reject normalized passwords found in the compromised password store | When enabled, incoming passwords will be normalized according to the [[normalization rules]] before being compared to the compromised password store | 
 | Reject normalized passwords found in the banned word store | When enabled, incoming passwords will be normalized according to the [[normalization rules]] before being compared to the banned word store. |
 
 Next: [[Test the password filter|Testing the password filter]]
