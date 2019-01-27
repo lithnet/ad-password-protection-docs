@@ -34,8 +34,8 @@ The cmdlet will return one of the following values
 | MatchedRejectRegex | 5 | The password did matched the rejection regular expression |
 | ContainsAccountName | 6 | The password contained the user's account name |
 | ContainsFullName | 7 | The password contained all or part of the user's full name |
-| Banned | 8 | The password was found in the breached password store |
-| BannedNormalizedPassword | 9 | The password was found in the breached password store after the [[normalization rules]] were applied |
+| Breached | 8 | The password was found in the breached password store |
+| BreachedNormalizedPassword | 9 | The password was found in the breached password store after the [[normalization rules]] were applied |
 | BannedNormalizedWord | 10 | The password was found in the banned word store after the [[normalization rules]] were applied |
 | PasswordWasBlank | 11 | The password was an empty string |
 | FilterError | 100 | An exception occurred in the filter engine and the password could not be processed |
