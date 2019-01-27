@@ -10,13 +10,13 @@ This cmdlet does not require the password filter to be registered with LSASS, bu
 ## Syntax
 ```powershell
 # Test a user's password using their username and domain name
-Test-IsADUserPasswordCompromised -AccountName <string> -DomainName <string> -Server <string> -Credential <PSCredential> -OutBadHashOnMatch
+Test-IsADUserPasswordCompromised -AccountName <string> -DomainName <string> -Server <string> -Credential <PSCredential> [-OutputCompromisedHashOnMatch]
 
 # Test a user's password using their UPN
-Test-IsADUserPasswordCompromised -Upn <string> -Server <string> -Credential <PSCredential> -OutBadHashOnMatch
+Test-IsADUserPasswordCompromised -Upn <string> -Server <string> -Credential <PSCredential> [-OutputCompromisedHashOnMatch]
 
 # Test a user's password using the string representation of their SID
-Test-IsADUserPasswordCompromised -Sid <string> -Server <string> -Credential <PSCredential> -OutBadHashOnMatch
+Test-IsADUserPasswordCompromised -Sid <string> -Server <string> -Credential <PSCredential> [-OutputCompromisedHashOnMatch]
 ```
 
 ## Parameters
@@ -38,12 +38,12 @@ Optional. The server to retrieve the password hash from. If omitted, the cmdlet 
 ##### `Credential`
 Optional. The credentials to use to retrieve the password has from the directory. If omitted, the credentials of the currently logged on user are used.
 
-##### `OutBadHashOnMatch`
+##### `OutputCompromisedHashOnMatch`
 The cmdlet ordinarily returns a `$true` `$false` value to indicate if the password is in the store. If this switch is specified, the cmdlet will output the raw NTLM hash when a match is found in the store, and nothing if there was no match.
 
 ## Return value
 The cmdlet returns a boolean value indicating whether the user's password was found in the compromised password store. 
-However, if the `OutBadHashOnMatch` switch is specified, and the user's password was found in the compromised password store, the cmdlet will return the compromised password hash in hex format.
+However, if the `OutputCompromisedHashOnMatch` switch is specified, and the user's password was found in the compromised password store, the cmdlet will return the compromised password hash in hex format.
 
 ## Examples
 Test a user password using the default credentials against the default domain
@@ -73,11 +73,11 @@ False
 Test a user password using the samAccountName of the user, and return the hash if a compromised password was detected
 ```powershell
 # cmdlet returns the hash when a compromised password was found
-PS> Test-IsADUserPasswordCompromised -AccountName ryan -Domain lithnet -OutBadHashOnMatch
+PS> Test-IsADUserPasswordCompromised -AccountName ryan -Domain lithnet -OutputCompromisedHashOnMatch
 8846f7eaee8fb117ad06bdd830b7586c
 
 # cmdlet returns nothing if the password isn't compromised
-PS> Test-IsADUserPasswordCompromised -AccountName bob -Domain lithnet -OutBadHashOnMatch
+PS> Test-IsADUserPasswordCompromised -AccountName bob -Domain lithnet -OutputCompromisedHashOnMatch
 ```
 
 
