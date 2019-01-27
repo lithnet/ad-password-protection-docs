@@ -1,4 +1,4 @@
-* [[Getting started guide]]
+* [[Setup guide]]
    * [[Install the module|installing the module]]
    * [[Create a new store|Create a new store]]
    * [[Configure the password group policy|Configure group policy]]
