@@ -15,7 +15,7 @@ Test-IsCompromisedPassword -SecureString <SecureString> -Normalize
 Required. The string to test. 
 
 ##### `Normalize`
-Optional. If specified, [[normalization rules]] are applied to the password before being checked against the compromised password store. To test against the banned word store, use the [[Test‐BannedWord]] cmdlet instead.
+Optional. If specified, [[normalization rules]] are applied to the password before being checked against the compromised password store. To test against the banned word store, use the [[Test‐IsBannedWord]] cmdlet instead.
 
 ##### `Hash`
 Required. A binary hash to test.
