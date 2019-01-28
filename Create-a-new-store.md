@@ -36,7 +36,7 @@ If you have individual passwords you want to add, you can use the [[Add‐Compro
 Add-CompromisedPassword -Value p@ssw0rd
 ```
 
-To test to see if a password is in the compromised password store, use the [[Test‐CompromisedPassword]] cmdlet. The cmdlet will return `true` if the password was found in the compromised store.
+To test to see if a password is in the compromised password store, use the [[Test‐IsCompromisedPassword]] cmdlet. The cmdlet will return `true` if the password was found in the compromised store.
 ```powershell
 Test-IsCompromisedPassword -Value p@ssw0rd
 ```
