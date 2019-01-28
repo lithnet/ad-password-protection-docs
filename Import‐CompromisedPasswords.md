@@ -3,7 +3,7 @@ The ```Import-CompromisedPasswords``` cmdlet will import a file containing new l
 
 ## Syntax
 ```
-Import-CompromisedPasswords-Filename <string> -BatchSize <int>
+Import-CompromisedPasswords -Filename <string> -BatchSize <int>
 ```
 
 ## Parameters
