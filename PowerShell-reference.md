@@ -10,6 +10,8 @@ The PowerShell module contains the following cmdlets
 | [[Import‐CompromisedPasswordHashes]] | Imports a file containing hashes of compromised passwords |
 | [[Import‐CompromisedPasswords]] | Imports a file containing compromised plain-text passwords |
 | [[Open‐Store]] | Opens a store |
+| [[Remove‐BannedWord]] | Removes a word from the banned word store |
+| [[Remove‐CompromisedPassword]] | Removes a passowrd from the compromised password store |
 | [[Test‐IsADUserPasswordCompromised]] | Extracts the hash of an AD user's password from the directory and tests it against the compromised password store |
 | [[Test‐IsBannedWord]] | Tests to see if the specified string matches an item in banned word store |
 | [[Test‐IsCompromisedPassword]] | Tests to see if the specified string is in the compromised password store |
