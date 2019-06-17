@@ -1,5 +1,5 @@
 ## Description
-The ```Add-CompromisedPassword``` cmdlet and a string into the compromised password store. When the password filter is configured to check against compromised passwords, any password that is an exact match to this string will rejected.
+The ```Add-CompromisedPassword``` cmdlet adds a string into the compromised password store. When the password filter is configured to check against compromised passwords, any password that is an exact match to this string will rejected.
 
 ## Syntax
 ```
