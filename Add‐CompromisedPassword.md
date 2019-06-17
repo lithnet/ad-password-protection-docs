@@ -20,7 +20,7 @@ The following example adds a single compromised password to the store
 Add-CompromisedPassword -Value "password"
 ```
 
-The following example prompts for a password to add to the compromised password
+The following example prompts for a password to add to the compromised password store
 ```powershell
 Add-CompromisedPassword -SecureString (Read-Host -Prompt "Enter the compromised password to add to the store" -AsSecureString)
 ```
