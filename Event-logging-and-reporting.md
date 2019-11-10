@@ -4,6 +4,7 @@ The password filter logs events to the `Application` log on the domain controlle
 | --- | --- | --- | --- |
 | 1 | Error | An unexpected error occurred | The filter encountered an unexpected error and could not process the request |
 | 2 | Warning | The Lithnet AD Password Filter is currently disabled and has not evaluated the password change request | This message appears when the filter is installed and registered with LSASS, but has been disabled and is not evaluating password changes |
+| 3 | Info | The password filter has been successfully loaded | Appears in the event log at startup when the password filter has been successfully loaded by windows (v1.0.7234 and later) | 
 | 4 | Success | Processing a password %1 request for %2 (%3). | Each password set/change attempt will cause this event to be logged |
 | 5 | Success | The password %1 request for %2 (%3) was approved. | This event is logged when a password is approved by the filter |
 | 8 | Error | An unexpected error occurred | The filter encountered an unexpected win32 error and could not process the request | |
