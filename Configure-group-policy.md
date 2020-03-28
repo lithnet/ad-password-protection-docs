@@ -2,6 +2,8 @@ The password filter must be enabled and configured using group policy before it 
 
 The group policy templates should be installed on any machine that you need to configure the password settings group policy on. We recommend copying the ADMX files to a [central policy store](https://support.microsoft.com/en-au/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra), which will enable you to see and manage the group policy settings from any machine in the domain.
 
+If you do not copy the ADMX/ADML files to the central policy story in the domain, you'll only be able to see and edit the group policy settings from the machine where you installed the ADMX files.
+
 Once you have installed the templates, create a new GPO, which you will link to the OU containing your domain controllers in Active Directory. If you have other computers that you want to be able to use the [[Get‐PasswordFilterResult]] cmdlet on, they will need to have the group policy applied to them as well.
 
 Do note that Active Directory will still process its own password policy rules, so ensure that the built-in Active Directory password policy settings do not conflict with those that you set in the Lithnet Password Protection settings. For example if you are using password complexity settings in this LPP, then its recommended to disable Active Directory's complexity settings.
