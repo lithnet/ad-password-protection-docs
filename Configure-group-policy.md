@@ -19,8 +19,8 @@ The group policy settings are found under `Computer Configuration\Policies\Admin
 #### Regular expression policies
 | Setting | Explanation | 
 | --- | --- |
-| Password must match a specified regular expression | When enabled, passwords that do not match the specified regular expression will be rejected. If disabled, or set to not configured, the password filter will not evaluate passwords against the regular expression |
-| Passwords must not match a specified regular expression | When enabled, passwords that match the specified regular expression will be rejected. If disabled, or set to not configured, the password filter will not evaluate passwords against the regular expression |
+| Password must match a specified regular expression | When enabled, passwords that do not match the specified regular expression will be rejected. If disabled, or set to not configured, the password filter will not evaluate passwords against the regular expression. Note that the regular expression must match the entire password, not a substring of it. |
+| Passwords must not match a specified regular expression | When enabled, passwords that match the specified regular expression will be rejected. If disabled, or set to not configured, the password filter will not evaluate passwords against the regular expression. Note that the regular expression must match the entire password, not a substring of it. |
 
 #### Complexity policies
 | Setting | Explanation |
