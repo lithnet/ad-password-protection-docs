@@ -1,3 +1,5 @@
+# Event logging and reporting
+
 The password filter logs events to the `Application` log on the domain controllers using the event source `LithnetPasswordProtection`. Reporting is easily performed using a logging and analytics service such as Microsoft OMS or Splunk. The following table lists the event log messages that are logged by the module, and their descriptions.
 
 | Code | Severity | Message | Notes |

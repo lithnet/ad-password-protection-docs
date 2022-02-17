@@ -1,17 +1,19 @@
+# Configure the password group policy
+
 The password filter must be enabled and configured using group policy before it will process password changes. When installing the application, you have the option of installing the ADMX group policy template files. 
 
 The group policy templates should be installed on any machine that you need to configure the password settings group policy on. We recommend copying the ADMX files to a [central policy store](https://support.microsoft.com/en-au/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra), which will enable you to see and manage the group policy settings from any machine in the domain.
 
 If you do not copy the ADMX/ADML files to the central policy story in the domain, you'll only be able to see and edit the group policy settings from the machine where you installed the ADMX files.
 
-Once you have installed the templates, create a new GPO, which you will link to the OU containing your domain controllers in Active Directory. If you have other computers that you want to be able to use the [[Get‐PasswordFilterResult]] cmdlet on, they will need to have the group policy applied to them as well.
+Once you have installed the templates, create a new GPO, which you will link to the OU containing your domain controllers in Active Directory. If you have other computers that you want to be able to use the [Get‐PasswordFilterResult](/documentation/powershell_reference/Get-PasswordFilterResult) cmdlet on, they will need to have the group policy applied to them as well.
 
 Do note that Active Directory will still process its own password policy rules, so ensure that the built-in Active Directory password policy settings do not conflict with those that you set in the Lithnet Password Protection settings. For example if you are using password complexity settings in this LPP, then its recommended to disable Active Directory's complexity settings.
 
 The group policy settings are found under `Computer Configuration\Policies\Administrative Templates\Lithnet\Password Filter`.
 
-### Settings Reference
-#### General settings
+## Settings Reference
+### General settings
 | Setting | Explanation |
 | --- | --- |
 | Disable password filter | When enabled, prevents the password filter from evaluating password change requests. If disabled, or set to not configured, the password filter will evaluate password change requests |
@@ -25,8 +27,8 @@ The group policy settings are found under `Computer Configuration\Policies\Admin
 #### Complexity policies
 | Setting | Explanation |
 | --- | --- |
-| Passwords must meet the specified number of complexity points | The password filter allows you to set a points-based threshold for password complexity. You must specify the number of points a password must reach to be approved. You can then assign points based on the character make up of the password. See the page on [[configuring a points-based complexity policy]] for more information | 
-| Enable length-based complexity rules | When enabled, enforces password complexity rules based on the length of the supplied password. This policy allows you to provide granular complexity requirements based on password length. You can reward longer passwords with less complex requirements. See the page on [[configuring a length-based complexity policy]] for more information |
+| Passwords must meet the specified number of complexity points | The password filter allows you to set a points-based threshold for password complexity. You must specify the number of points a password must reach to be approved. You can then assign points based on the character make up of the password. See the page on [configuring a points-based complexity policy](/documentation/Configuring-a-points-based-complexity-policy) for more information | 
+| Enable length-based complexity rules | When enabled, enforces password complexity rules based on the length of the supplied password. This policy allows you to provide granular complexity requirements based on password length. You can reward longer passwords with less complex requirements. See the page on [configuring a length-based complexity policy](/documentation/Configuring-a-points-based-complexity-policy) for more information |
 | Minimum password length | When enabled, specifies the minimum password length to enforce. If disabled or not configured, no minimum password length is enforced | 
 
 #### Password content policies
@@ -38,4 +40,4 @@ The group policy settings are found under `Computer Configuration\Policies\Admin
 | Reject normalized passwords found in the compromised password store | When enabled, incoming passwords will be normalized according to the [[normalization rules]] before being compared to the compromised password store | 
 | Reject normalized passwords found in the banned word store | When enabled, incoming passwords will be normalized according to the [[normalization rules]] before being compared to the banned word store. |
 
-Next: [[Test the password filter|Testing the password filter]]
+Next: [Test the password filter](Testing-the-password-filter)
