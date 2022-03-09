@@ -1,6 +1,8 @@
+
+
+## Creating a new store
 The store is the database that contains the compromised passwords and banned words you want to prevent from being used in your environment. An empty store is created when you install the module, so you'll need to use the PowerShell module to build your store. 
 
-# Creating a new store
 If you didn't specify your store path when running the installer, first create a new empty folder for the store
 ```powershell
 mkdir D:\password-protection\store
@@ -13,7 +15,7 @@ Next, import the PowerShell module and open the store folder
 Import-Module LithnetPasswordProtection
 Open-Store -Path "D:\password-protection\store"
 ```
-## Add compromised passwords to the store
+### Add compromised passwords to the store
 The PowerShell module is now ready to use the new store folder. First, import your compromised passwords. We recommend starting with the [Have I Been Pwned](https://haveibeenpwned.com/Passwords) NTLM password list. Download the version that says `(ordered by hash)` for the best performance. Once you have the download, import them into your new store using the [Import-CompromisedPasswordHashes](/documentation/powershell_reference/Import‐CompromisedPasswordHashes) cmdlet.
 
 ```powershell
@@ -41,7 +43,7 @@ To test to see if a password is in the compromised password store, use the [Test
 Test-IsCompromisedPassword -Value p@ssw0rd
 ```
 
-## Add banned words to the store
+### Add banned words to the store
 The password filter can also protect against common substitutions by normalizing incoming passwords, and checking them against the banned word store. For example, adding the word `lithnet` to the banned word store, will prevent common variations such as `lithnet2018` `l1thn3t` `Lithnet!` from being used. You can read more about the [normalization rules](/documentation/Normalization-rules) to understand how this works in more detail. The banned word store contains the list of these words you want to prevent passwords being based on. You can load in common names in your organization, or load in the entire dictionary. The [Import‐BannedWords](/documentation/powershell_reference/Import‐BannedWords) cmdlet is used to import a file of new-line separated words.
 
 ```powershell
@@ -56,4 +58,3 @@ Add-BannedWord -Value "lithnet"
 
 Once you have completed creating your store, you need to decide how your servers are going to access the store. We recommend using DFS-R to replicate the store to each domain controller, so they each have an up-to-date local copy. Alternatively, you can manually copy it to each domain controller, or share it from a highly-available file server. 
 
-Next: [Configure the password group policy](Configure-group-policy)

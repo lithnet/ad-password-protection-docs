@@ -3,9 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Home
-##############################################
-
+Lithnet Password Protection for Active Directory
+================================================
 Lithnet Password Protection for Active Directory (LPP) enhances the options available to an organization wanting to ensure that all their Active Directory accounts have strong passwords.
 
 LPP is a module that you install on your Active Directory servers that uses a password filter to inspect passwords as users attempt to change them. Using group policy, you customize the types of checks you want to perform on those passwords and they are either rejected, or approved, and committed to the directory.
@@ -20,7 +19,7 @@ LPP gives you the ability to take control of what a good password means to you. 
 
 It also includes the ability to audit your users' existing passwords against the compromised password list. You'll be able to find the weak and known compromised passwords, and force those users to change their password.
 
-
+===================
 Additional features
 ===================
 * Full PowerShell support which is used to;
@@ -35,7 +34,7 @@ Additional features
 * No additional servers required for deployment
 * Group policy support
 
-
+===================
 System Requirements
 ===================
 
@@ -52,6 +51,7 @@ LPP is only supported on x64 editions of Windows
 * PowerShell 5
 * Microsoft Visual C++ Runtime 14 (2017)
 
+===============
 Getting started
 ===============
 
@@ -59,19 +59,19 @@ Download the installer from the `releases page <https://github.com/lithnet/ad-pa
 
 Read the `getting started blog post <https://blog.lithnet.io/2019/01/lppad-1.html>`_ or continue reading for the full set of documentation.
 
-
+====================================
 How can I contribute to the project?
 ====================================
 
 * Found an issue and want us to fix it? `log it <https://github.com/lithnet/ad-password-protection/issues>`_
 * Want to fix an issue yourself or add functionality? Clone the project and submit a pull request
 
-
+=================
 Enteprise support
 =================
 Lithnet offer enterprise support plans for our open-source products. Deploy our tools with confidence that you have the backing of the dedicated Lithnet support team if you run into any issues, have questions, or need advice. Reach out to support@lithnet.io, let us know the number of users you are protecting with LPP, and we'll put together a quote.
 
-
+================
 Acknowledgements
 ================
 

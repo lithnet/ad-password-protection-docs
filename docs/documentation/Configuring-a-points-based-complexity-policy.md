@@ -1,3 +1,5 @@
+# Configuring a points based complexity policy
+
 The password filter policy allows you to require that passwords meet a certain number of points in order to be approved by the filter.
 
 You first select the minimum number of points required for the password to be approved, and then determine how the points are calculated. The following categories can be used to assign points;

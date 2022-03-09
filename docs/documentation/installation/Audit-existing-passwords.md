@@ -75,5 +75,3 @@ $Searcher.FindAll() | % {
 ```
 
 Using the results of the script, you could contact the users and ask them to change their password, or force a password change at next logon.
-
-Next: [Event logging and reporting](Event-logging-and-reporting)

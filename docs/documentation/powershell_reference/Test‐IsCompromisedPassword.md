@@ -1,4 +1,4 @@
-## Description
+# Description
 The ```Test-IsCompromisedPassword``` cmdlet checks to see if a specified string matches a value in the compromised password store. 
 
 ## Syntax
@@ -10,12 +10,12 @@ Test-IsCompromisedPassword -Hash <byte[]>
 Test-IsCompromisedPassword -SecureString <SecureString> -Normalize
 ```
 
-## Parameters
+### Parameters
 ##### `Value`
 Required. The string to test. 
 
 ##### `Normalize`
-Optional. If specified, [[normalization rules]] are applied to the password before being checked against the compromised password store. To test against the banned word store, use the [[Test‐IsBannedWord]] cmdlet instead.
+Optional. If specified, [normalization rules](../Normalization-rules.md) are applied to the password before being checked against the compromised password store. To test against the banned word store, use the [Test‐IsBannedWord](Test‐IsBannedWord) cmdlet instead.
 
 ##### `Hash`
 Required. A binary hash to test.
@@ -23,10 +23,10 @@ Required. A binary hash to test.
 ##### `SecureString`
 Required. The string to test as a SecureString. 
 
-## Return value
+### Return value
 The cmdlet returns a boolean value indicating whether the input string or hash matches a value in the compromised password store.
 
-## Examples
+### Examples
 ```powershell
 # Add a password to the store
 PS> Add-CompromisedPassword -Value password!!!

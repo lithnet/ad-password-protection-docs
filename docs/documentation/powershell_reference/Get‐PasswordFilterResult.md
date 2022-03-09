@@ -1,7 +1,7 @@
-## Description
+# Description
 The ```Get-PasswordFilterResult``` cmdlet allows you to programatically test passwords against your password policy. 
 
-This cmdlet does not attempt to change the user's password, nor does it contact the domain controller. Use of this cmdlet requires that the [[group policy|configure group policy]] for the password filter is configured and applied to the computer you are running the cmdlet on. The password filter does not need to be configured to filter passwords on the local computer, but the policy needs to be in place. 
+This cmdlet does not attempt to change the user's password, nor does it contact the domain controller. Use of this cmdlet requires that the [group policy](../installation/Configure-group-policy) for the password filter is configured and applied to the computer you are running the cmdlet on. The password filter does not need to be configured to filter passwords on the local computer, but the policy needs to be in place. 
 
 ## Syntax
 ```
@@ -9,7 +9,7 @@ Get-PasswordFilterResult -Password <string> -Username <string> -Fullname <string
 
 Get-PasswordFilterResult -SecurePassword <SecureString> -Username <string> -Fullname <string> -IsSetOperation <bool>
 ```
-## Parameters
+### Parameters
 ##### `Password`
 Required. The password to test
 ##### `SecurePassword`
@@ -21,7 +21,7 @@ Required. The full name of the user who would be changing their password
 ##### `IsSetOperation`
 Optional. A boolean value indicating whether this should simulate a password set operation. The default value is false if not specified, which indicates that a password change operation should be simulated.
 
-## Return value
+### Return value
 The cmdlet will return one of the following values
 
 | String value | Numeric value | Description |
@@ -40,7 +40,7 @@ The cmdlet will return one of the following values
 | PasswordWasBlank | 11 | The password was an empty string |
 | FilterError | 100 | An exception occurred in the filter engine and the password could not be processed |
 
-## Examples
+### Examples
 ```powershell
 PS> Get-PasswordFilterResult -Password "password" -Username "test-user" -Fullname "John Test"
 Banned

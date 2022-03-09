@@ -1,4 +1,4 @@
-## Description
+# Description
 The ```Test-IsADUserPasswordCompromised``` cmdlet will extract the current password hash from Active Directory for the specified user, and check to see if it exists in the compromised password store. 
 
 This cmdlet must be executed by a user in the `Domain Admins` group, or by a user who holds the `Replicate Directory Changes All` permission on the domain containing the user to test. 
@@ -19,7 +19,7 @@ Test-IsADUserPasswordCompromised -Upn <string> -Server <string> -Credential <PSC
 Test-IsADUserPasswordCompromised -Sid <string> -Server <string> -Credential <PSCredential> [-OutputCompromisedHashOnMatch]
 ```
 
-## Parameters
+### Parameters
 ##### `AccountName`
 Required. The samAccountName of the user who's password should be tested.
 
@@ -41,11 +41,11 @@ Optional. The credentials to use to retrieve the password has from the directory
 ##### `OutputCompromisedHashOnMatch`
 The cmdlet ordinarily returns a `$true` `$false` value to indicate if the password is in the store. If this switch is specified, the cmdlet will output the raw NTLM hash when a match is found in the store, and nothing if there was no match.
 
-## Return value
+### Return value
 The cmdlet returns a boolean value indicating whether the user's password was found in the compromised password store. 
 However, if the `OutputCompromisedHashOnMatch` switch is specified, and the user's password was found in the compromised password store, the cmdlet will return the compromised password hash in hex format.
 
-## Examples
+### Examples
 Test a user password using the default credentials against the default domain
 ```powershell
 PS> Test-IsADUserPasswordCompromised -AccountName ryan -DomainName lithnet
