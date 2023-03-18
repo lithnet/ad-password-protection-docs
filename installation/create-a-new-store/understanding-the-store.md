@@ -6,7 +6,7 @@ The stores are created and maintained using [PowerShell.](../../advanced-help/po
 
 ## Compromised password store
 
-The compromised password store contains the NTLM hashes of exact passwords that you want to prevent your users from using. The most common usage of this store, is to populate it with hashes from the [haveibeenpwned.com](https://haveibeenpwned.com) compromised password lists (see the [Import‐CompromisedPasswordHashes](../../advanced-help/powershell-reference/import-compromisedpasswordhashes.md)) PowerShell cmdlet for more details). However, you can also add hashes from other online sources or your own list of bad passwords.
+The compromised password store contains the NTLM hashes of exact passwords that you want to prevent your users from using. The most common usage of this store, is to populate it with hashes from the [haveibeenpwned.com](https://haveibeenpwned.com) compromised password lists (see the [Sync‐HashesFromHibp](../../advanced-help/powershell-reference/sync-hashesfromhibp.md)) PowerShell cmdlet for more details). However, you can also add hashes from other online sources or your own list of bad passwords.
 
 You can add passwords to the store using the [Add‐CompromisedPassword,](../../advanced-help/powershell-reference/add-compromisedpassword.md) [Import‐CompromisedPasswords](../../advanced-help/powershell-reference/import-compromisedpasswords.md) and[ Import‐CompromisedPasswordHashes](../../advanced-help/powershell-reference/import-compromisedpasswordhashes.md) cmdlets.
 

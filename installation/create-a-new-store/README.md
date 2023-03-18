@@ -19,15 +19,17 @@ Open-Store -Path "D:\password-protection\store"
 
 ## Add compromised passwords to the store
 
-The PowerShell module is now ready to use the new store folder. First, import your compromised passwords. We recommend starting with the [Have I Been Pwned](https://haveibeenpwned.com/Passwords) NTLM password list. Download the version that says `(ordered by hash)` for the best performance. Once you have the download, import them into your new store using the [Import-CompromisedPasswordHashes ](../../advanced-help/powershell-reference/import-compromisedpasswordhashes.md)cmdlet.
+The PowerShell module is now ready to use the new store folder. 
+
+
+We recommend you synchronize your password store with the [Have I Been Pwned API](https://haveibeenpwned.com/) using the [Sync-HashesFromHibp](../../advanced-help/powershell-reference/sync-hashesfromhibp.md) cmdlet. 
+
 
 ```powershell
-Import-CompromisedPasswordHashes -Filename "D:\password-protection\pwned-passwords-ntlm-ordered-by-hash.txt"
+Sync-HashesFromHibp"
 ```
 
-> The raw NTLM hash list from HIBP requires about 17GB of disk space when uncompressed. However, once imported, these hashes only take up 6.75GB of space in the store. Populating the store takes approximately 40mins on a host with 1 x vCPU @ 2.4Ghz with 3.5Gb RAM.
-
-If you have other NTLM hash sets you want to import, you can do so. Just make sure they are in a text file, each separated by a new line.
+If you have other NTLM hash sets you want to import, you can do so. Just make sure they are in a text file, each separated by a new line. Use the [Import-CompromisedPasswordHashes ](../../advanced-help/powershell-reference/import-compromisedpasswordhashes.md) cmdlet to import them.
 
 You can also choose to import any plain-text password lists that you have access to. These are imported using the[ Import-CompromisedPasswordHashes](../../advanced-help/powershell-reference/import-compromisedpasswordhashes.md) cmdlet. Hashes.org has a large list of [cracked plain-text passwords](https://hashes.org/left.php) that you can download and import.
 
