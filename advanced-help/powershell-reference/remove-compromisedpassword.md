@@ -1,35 +1,83 @@
+---
+external help file: LithnetPasswordProtection.dll-Help.xml
+Module Name: LithnetPasswordProtection
+online version:
+schema: 2.0.0
+---
+
 # Remove-CompromisedPassword
 
-The `Remove-CompromisedPassword` cmdlet removes a string of text from the compromised password store.
+## SYNOPSIS
+Removes a compromised password from the store
 
-## Syntax
+## SYNTAX
 
+### String (Default)
 ```
-Remove-CompromisedPassword -Value <string>
-
-Remove-CompromisedPassword -SecureString <SecureString>
+Remove-CompromisedPassword [-Value] <String> [<CommonParameters>]
 ```
 
-### Parameters
+### SecureString
+```
+Remove-CompromisedPassword [-SecureString] <SecureString> [<CommonParameters>]
+```
 
-**`Value`**
+## DESCRIPTION
+The Remove-CompromisedPassword cmdlet removes a string of text from the compromised password store.
 
-Required. The password to remove from the compromised password store
+## EXAMPLES
 
-**`SecureString`**
-
-Required. The password to remove from the compromised password store as a secure string
-
-### Examples
-
-The following example removes a single compromised password from the store
-
+### Example 1
 ```powershell
-Remove-CompromisedPassword -Value "password"
+PS C:\> Remove-CompromisedPassword -Value "password"
 ```
 
-The following example prompts for a password to remove from the compromised password store
+Removes the string "password" from the compromised password store
 
-```powershell
-Remove-CompromisedPassword -SecureString (Read-Host -Prompt "Enter the compromised password to remove from the store" -AsSecureString)
+## PARAMETERS
+
+### -SecureString
+The password to remove from the compromised password store as a secure string
+
+```yaml
+Type: SecureString
+Parameter Sets: SecureString
+Aliases:
+
+Required: True
+Position: 1
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
 ```
+
+### -Value
+The password to remove from the compromised password store as a string
+
+```yaml
+Type: String
+Parameter Sets: String
+Aliases:
+
+Required: True
+Position: 1
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### System.String
+
+### System.Security.SecureString
+
+## OUTPUTS
+
+### System.Object
+## NOTES
+
+## RELATED LINKS

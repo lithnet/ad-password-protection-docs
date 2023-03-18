@@ -5,33 +5,35 @@ online version:
 schema: 2.0.0
 ---
 
-# Open-Store
+# Get-PasswordFilterPolicy
 
 ## SYNOPSIS
-Opens a password store
+Gets the current active policy 
 
 ## SYNTAX
 
 ```
-Open-Store [[-Path] <String>] [<CommonParameters>]
+Get-PasswordFilterPolicy [[-User] <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Open-Store cmdlet connects the PowerShell module to a new or existing password store. The use of the Open-Store cmdlet is required when connecting to a store that is not the default store for the current machine. If the Open-Store cmdlet is not run, other cmdlets will try to connect to the machines default store, and throw an error if the default store does not exist.
+This cmdlet shows the effective policy in place for the password filter on the current machine, as applied by group policy
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> Open-Store -Path "D:\password-protection\test-store"
+PS C:\>  Get-PasswordFilterPolicy | fl
 ```
 
-Opens the non-default store located at D:\password-protection\test-store
+Gets the current policy and formats it by list
 
 ## PARAMETERS
 
-### -Path
-The full path to the store you want to open.
+### -User
+The username of the user to obtain the policy for
+
+This parameter is reserved for future use and is currently ignored
 
 ```yaml
 Type: String
@@ -39,7 +41,7 @@ Parameter Sets: (All)
 Aliases:
 
 Required: False
-Position: 1
+Position: 0
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
