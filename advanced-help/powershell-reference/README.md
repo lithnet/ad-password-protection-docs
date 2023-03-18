@@ -1,4 +1,4 @@
-# Powershell reference
+# PowerShell reference
 
 The PowerShell module contains the following cmdlets
 
@@ -16,8 +16,8 @@ The PowerShell module contains the following cmdlets
 | [Open‐Store](open-store.md)                                             | Opens a store                                                                                                     |
 | [Remove‐BannedWord](remove-bannedword.md)                               | Removes a word from the banned word store                                                                         |
 | [Remove‐CompromisedPassword](remove-compromisedpassword.md)             | Removes a password from the compromised password store                                                            |
-| [Set-PasswordFilterConfig](set-passwordfilterconfig.md) |  Sets configuration of the password filter |
-| [Sync-HashesFromHibp](sync-hashesfromhibp.md) | Synchronizes compromised passwords hashes from the Have I Been Pwned API |
+| [Set-PasswordFilterConfig](set-passwordfilterconfig.md)                 | Sets configuration of the password filter |
+| [Sync-HashesFromHibp](sync-hashesfromhibp.md)                           | Synchronizes compromised passwords hashes from the Have I Been Pwned API |
 | [Test‐IsADUserPasswordCompromised](test-isaduserpasswordcompromised.md) | Extracts the hash of an AD user's password from the directory and tests it against the compromised password store |
 | [Test‐IsBannedWord](test-isbannedword.md)                               | Tests to see if the specified string matches an item in banned word store                                         |
 | [Test‐IsCompromisedPassword](test-iscompromisedpassword.md)             | Tests to see if the specified string is in the compromised password store                                         |
