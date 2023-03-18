@@ -26,7 +26,7 @@ We recommend you synchronize your password store with the [Have I Been Pwned API
 
 
 ```powershell
-Sync-HashesFromHibp"
+Sync-HashesFromHibp
 ```
 
 If you have other NTLM hash sets you want to import, you can do so. Just make sure they are in a text file, each separated by a new line. Use the [Import-CompromisedPasswordHashes ](../../advanced-help/powershell-reference/import-compromisedpasswordhashes.md) cmdlet to import them.
