@@ -1,10 +1,6 @@
-# Installing Password Protection
+# Installation
 
 Download the latest version of the installer from the [releases](https://github.com/lithnet/ad-password-protection/releases) page.
-
-In order to enable password filtering on your domain users, the application will need to be installed on all writable domain controllers in the domain. You can install the PowerShell module and group policy templates on any x64 machine.
-
-You can install and test the module using _local_ accounts on any x64 Windows workstation or server. However, if you want to test against domain accounts, you will need to install the module on your domain controllers.
 
 ## Installation options
 
@@ -38,4 +34,4 @@ The group policy templates should be installed on any machine that you need to c
 
 If you are going to use the compromised password and banned word functionality, you'll need to create a password store. The store is a file-based data structure containing the NTLM hashes of the compromised passwords and banned words.
 
-See the guide on [Creating a store](create-a-new-store.md) for instructions on populating your store with compromised passwords.
+See the guide on [Creating a store](create-a-new-store.md) for instructions on how to setup and configure your store.
