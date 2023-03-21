@@ -2,8 +2,6 @@
 
  In this guide, we will look at how to set up Lithnet Password Protection for Active Directory (LPP) from scratch. We'll configure a basic password policy, and integrate the haveibeenpwned.com pwned password data set to prevent users from changing their password to one that is known to be compromised.
 
-This guide will focus on testing in an Active Directory domain, by installing the agent on a domain controller. However, for testing purposes, you can install the agent on a member server or workstation. The only difference is you'll need to test using local accounts, rather than domain accounts.
-
 * [Setup requirements](setup-requirements.md) - First, read the pre-requistes and requirements for installation, and learn about the options for setting up a test environment or a production environment.
 * [Install the module](installing-the-module.md) - You'll need to download and install the application on your writable domain controllers to enable password filtering. You can also install the application on other servers to allow you to use the PowerShell cmdlets and manage the password settings via group policy.
 * [Create a new store](create-a-new-store.md) - If you plan on using the compromised password functionality, then once the module is installed you'll need to create the database that contains the compromised passwords. Each domain controller will need access to this store, so this guide will assist you in determining the best way to achieve this.
