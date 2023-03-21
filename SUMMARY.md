@@ -1,32 +1,27 @@
 # Table of contents
 
-## About Lithnet Password Protection
+## Home
 
-* [How does Password Protection help my organisation](README.md)
-* [Enterprise Support](about-lithnet-password-protection/enterprise-support.md)
+* [About Lithnet Password Protection](README.md)
 
-## Installation
+## Setup
 
 * [Getting Started](installation/setup-guide.md)
-* [Installation of Password Protection](installation/installing-the-module.md)
-* [Creating a new store](installation/create-a-new-store/README.md)
-  * [Understanding the store](installation/create-a-new-store/understanding-the-store.md)
-* [Configure the password group policy](installation/configure-group-policy.md)
-* [Testing the password filter](installation/testing-the-password-filter.md)
+* [Installing Password Protection](installation/installing-the-module.md)
+* [Creating a new store](installation/create-a-new-store.md)
+* [Load compromised passwords into the store](installation/populate-the-store.md)
+* [Configure group policy](installation/configure-group-policy.md)
+* [Testing the password filter](help-and-support/testing-the-password-filter.md)
+
+## Auditing
 * [Audit existing passwords](installation/audit-existing-passwords.md)
-* [Event logging and reporting](installation/event-logging-and-reporting.md)
-
-## Configuration
-
-* [Configuring a length based complexity policy](configuration/configuring-a-length-based-complexity-policy.md)
-* [Configuring a points based complexity policy](configuration/configuring-a-points-based-complexity-policy.md)
 
 ## Help & Support
-
-* [Normalization Rules](help-and-support/normalization-rules.md)
+* [Testing the password filter](help-and-support/testing-the-password-filter.md)
+* [Troubleshooting steps](help-and-support/troubleshooting.md)
+* [Getting support](help-and-support/getting-support.md)
 
 ## Advanced Help
-
 * [Powershell reference](advanced-help/powershell-reference/README.md)
   * [Add-BannedWord](advanced-help/powershell-reference/add-bannedword.md)
   * [Add-CompromisedPassword](advanced-help/powershell-reference/add-compromisedpassword.md)
@@ -45,3 +40,7 @@
   * [Test-IsADUserPasswordCompromised](advanced-help/powershell-reference/test-isaduserpasswordcompromised.md)
   * [Test-IsBannedWord](advanced-help/powershell-reference/test-isbannedword.md)
   * [Test-IsCompromisedPassword](advanced-help/powershell-reference/test-iscompromisedpassword.md)
+* [Normalization Rules](advanced-help/normalization-rules.md)
+* [Event logging and reporting](advanced-help/event-logging-and-reporting.md)
+* [Configuring a length based complexity policy](advanced-help/configuring-a-length-based-complexity-policy.md)
+* [Configuring a points based complexity policy](advanced-help/configuring-a-points-based-complexity-policy.md)

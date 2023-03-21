@@ -1,14 +1,12 @@
-# How does Password Protection help my organisation
-
-
+# About Lithnet Password Protection
 
 Lithnet Password Protection for Active Directory (LPP) enhances the options available to an organization wanting to ensure that all their Active Directory accounts have strong passwords.
 
-LPP is a module that you install on your Active Directory servers that uses a [password filter](https://docs.microsoft.com/en-us/windows/desktop/secmgmt/password-filters) to inspect passwords as users attempt to change them. Using group policy, you customize the types of checks you want to perform on those passwords and they are either rejected, or approved, and committed to the directory.
+LPP is a module that you install on your Active Directory servers that uses a [password filter](https://docs.microsoft.com/en-us/windows/desktop/secmgmt/password-filters) to inspect passwords as users attempt to change them. Using group policy, you customize the types of checks you want to perform on those passwords, and they are either rejected, or approved, and committed to the directory.
 
 LPP gives you the ability to take control of what a good password means to you. Whether you want to adopt the 2018 NIST password recommendations in part, or in full, it provides a rich set of group policy-based controls that allow you to enable any combination of the following checks on attempted password changes.
 
-* **Block compromised passwords from being used**. We've made it super easy to import the HIBP data set, but you can also import any plain-text passwords or NTLM hashes that you can get your hands on.
+* **Block compromised passwords from being used**. We've made it super easy to import the "Have I Been Pwned" data set, but you can also import any plain-text passwords or NTLM hashes that you can get your hands on.
 * **Block passwords based on certain words**. Adding a banned word prevents it from being used as the base of a password. For example, adding the word 'password' to the banned word store, prevents not only the use of that word itself, but common variants such as 'P@ssw0rd', 'pa55word!' and 'password123456!'. LPP is aware of common character substitutions and weak obfuscations and prevents their use through a normalization process.
 * **Define complexity policies based on length**. For example, you can require number, symbol, upper and lower for passwords less than 13 characters, but have no special requirements for passwords 13 characters or longer. Reward length, with less complexity.
 * **Regular expression-based policies**. If regular expressions are your thing, you can define a regular expression that the password must match (or not match).
@@ -16,12 +14,11 @@ LPP gives you the ability to take control of what a good password means to you. 
 
 It also includes the ability to audit your users' existing passwords against the compromised password list. You'll be able to find the weak and known compromised passwords, and force those users to change their password.
 
-
-
 ### Additional features
 
 * Full PowerShell support which is used to;
-  * Manage the compromised password and banned word stores. Add your own banned words and compromised passwords, as well as use popular databases such as the haveibeenpwned.com downloadable password list
+  * Synchronize compromise password lists from the haveibeenpwned.com API
+  * Add your own banned words and compromised passwords, as well as use popular 3rd party word and password lists
   * Test passwords and existing hashes against the compromised store
   * Check to see if your user's current passwords in AD are found in the compromised password store
 * Passwords never leave the domain controller

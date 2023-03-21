@@ -2,7 +2,7 @@
 
 The password filter policy allows you to assign different complexity requirements to passwords based on their length. This allows you to 'reward' length over choice of character sets.
 
-For example you can require 3 out of 4 character sets for passwords under 13 characters in length, but anything over that has no special requirements.
+For example, you can require 3 out of 4 character sets for passwords under 13 characters in length, but anything over that has no special requirements.
 
 The `Enable length-based complexity rules` policy allows you to define three separate thresholds each with their own requirements.
 

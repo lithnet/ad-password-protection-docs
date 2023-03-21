@@ -1,4 +1,4 @@
-# Installation of Password Protection
+# Installing Password Protection
 
 Download the latest version of the installer from the [releases](https://github.com/lithnet/ad-password-protection/releases) page.
 
@@ -10,22 +10,19 @@ You can install and test the module using _local_ accounts on any x64 Windows wo
 
 The installer presents several options for you to choose from
 
-* Lithnet Password Protection for Active Directory
-  * Enable password filtering on this computer
-  * PowerShell module
+* Enable password filtering on this computer
+* PowerShell module
 * Group policy templates (ADMX)
-
-### Lithnet Password Protection for Active Directory
-
-This is the component that contains the logic to test passwords against your policy. It is required to be installed to use any of the other functions
 
 ### Enable password filtering on this computer
 
-When you select this option, the installer will register the password filter with the local security authority subsystem (LSASS) on the local computer. After a reboot, Windows will pass all password changes to the filter for validation. Note that you still need an appropriate [group policy ](configure-group-policy.md)configured before the filter will be configured to reject any passwords.
+When you select this option, the installer will register the password filter with the local security authority subsystem (LSASS) on the local computer. After a reboot, Windows will pass all password changes to the filter for validation. Note that you still need an appropriate [group policy](configure-group-policy.md) configured before the filter will be configured to reject any passwords.
 
 When you select this option on a domain controller, this means that the password filter will process any password change or set operations for any user.
 
-> Note that as any writable domain controller in a domain can process a password change, the module must be installed on every domain controller.
+{% hint style="info" %}
+Note that as any writable domain controller in a domain can process a password change, the module must be installed on every domain controller.
+{% endhint %}
 
 When you select this option a member server or workstation, enabling this option will mean that password changes for local accounts are checked by the filter for approval. Password changes for domain accounts are always processed by the domain controller, so this setting has no effect for domain account password changes performed on member servers and workstations.
 
@@ -39,8 +36,6 @@ The group policy templates should be installed on any machine that you need to c
 
 ### Choosing a store path
 
-If you are going to use the compromised password and banned word functionality, you'll need to create a[ password store](create-a-new-store/understanding-the-store.md). The store is a file-based data structure containing the NTLM hashes of the compromised passwords and banned words.
+If you are going to use the compromised password and banned word functionality, you'll need to create a password store. The store is a file-based data structure containing the NTLM hashes of the compromised passwords and banned words.
 
-We recommend creating a folder, and replicating it with DFS-R to all the machines that will be performing password filtering. This means all servers have the same copy of the password store, and by having a local copy, they are immune to network or connectivity problems. Otherwise, you can manually copy the store to all nodes, and just ensure that any updates you make are copied to each host as well. If you prefer, you can configure a network share to host the store. You'll just need to ensure that the machine accounts for all servers performing filtering have read access to the share.
-
-See the guide on[ Creating a store](create-a-new-store/) for instructions on populating your store with compromised passwords.
+See the guide on [Creating a store](create-a-new-store.md) for instructions on populating your store with compromised passwords.
