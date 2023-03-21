@@ -20,6 +20,7 @@
 ## Help & Support
 * [Testing the password filter](help-and-support/testing-the-password-filter.md)
 * [Troubleshooting steps](help-and-support/troubleshooting.md)
+* [Frequently asked questions](help-and-support/faqs.md)
 * [Getting support](help-and-support/getting-support.md)
 
 ## Advanced Help
@@ -45,3 +46,4 @@
 * [Event logging and reporting](advanced-help/event-logging-and-reporting.md)
 * [Configuring a length based complexity policy](advanced-help/configuring-a-length-based-complexity-policy.md)
 * [Configuring a points based complexity policy](advanced-help/configuring-a-points-based-complexity-policy.md)
+* [Understanding the store](advanced-help/understanding-the-store.md)
