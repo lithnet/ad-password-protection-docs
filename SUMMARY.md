@@ -6,8 +6,8 @@
 
 ## Setup
 
-* [Setup requirements](installation/setup-requirements.md)
 * [Getting Started](installation/setup-guide.md)
+* [Setup requirements](installation/setup-requirements.md)
 * [Installing Password Protection](installation/installing-the-module.md)
 * [Creating a new store](installation/create-a-new-store.md)
 * [Load compromised passwords into the store](installation/populate-the-store.md)
