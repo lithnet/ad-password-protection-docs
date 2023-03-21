@@ -6,6 +6,9 @@ The first step to ensure the password filter is working, is to check to see if i
 In the `Application` log, make sure you can see event ID 3, from `LithnetPasswordProtection` with the message shown below
 
 ```
+Event ID: 3
+Event Source: LithnetPasswordProtection
+Message:
 The password filter has been successfully loaded.
 ```
 
