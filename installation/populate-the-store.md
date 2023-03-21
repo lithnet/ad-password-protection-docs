@@ -13,13 +13,13 @@ Open-Store -Path "D:\password-protection\store"
 
 We recommend you synchronize your password store with the [Have I Been Pwned API](https://haveibeenpwned.com/API/v3) using the [Sync-HashesFromHibp](../advanced-help/powershell-reference/sync-hashesfromhibp.md) cmdlet. 
 
-{% hint style="info" %}
-If you are replicating the store with DFS-R, pause replication before you start populating the store. Wait until you have completed the import process before resuming replication.
-{% endhint %}
-
 ```powershell
 Sync-HashesFromHibp
 ```
+
+{% hint style="info" %}
+If you are replicating the store with DFS-R, pause replication before you start populating the store. Wait until you have completed the import process before resuming replication.
+{% endhint %}
 
 If you don't have internet access from the server where the LPP store is being created, you can use the [HIBP downloader](https://github.com/HaveIBeenPwned/PwnedPasswordsDownloader) to download the dataset.
 
