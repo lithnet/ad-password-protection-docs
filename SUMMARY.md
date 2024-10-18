@@ -7,6 +7,7 @@
 ## Setup
 
 * [Getting started](installation/setup-guide.md)
+* [Downloads](installation/downloads.md)
 * [Setup requirements](installation/setup-requirements.md)
 * [Installation](installation/installing-the-module.md)
 * [Creating a new store](installation/create-a-new-store.md)
@@ -22,6 +23,7 @@
 * [Troubleshooting steps](help-and-support/troubleshooting.md)
 * [Frequently asked questions](help-and-support/faqs.md)
 * [Getting support](help-and-support/getting-support.md)
+* [Change log](change-log.md)
 
 ## Advanced Help
 * [Powershell reference](advanced-help/powershell-reference/README.md)
