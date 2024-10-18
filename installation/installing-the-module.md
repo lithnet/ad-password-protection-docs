@@ -1,6 +1,6 @@
 # Installation
 
-Download the latest version of the installer from the [releases](https://github.com/lithnet/ad-password-protection/releases) page.
+Download the latest version of the installer from the [downloads](downloads.md) page.
 
 ## Installation options
 
