@@ -1,4 +1,9 @@
 # Change log
+
+## v1.1.55 19th Nov 2024
+### Password Protection service
+- \[FEATURE\] Adds support for specifying a HTTP proxy on the `Sync-HashesFromHibp` cmdlet with a new `-ProxyAdddress` parameter
+
 ## v1.1.53 8th May 2023
 ### Password Protection service
 - \[FIX\] Fixes an issue where a NullReferenceException occurs using the PowerShell module to change the store path
