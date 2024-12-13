@@ -1,5 +1,9 @@
 # Change log
 
+## v1.1.57 13th Dec 2024
+### Password Protection service
+- \[FIX\] Fixes an issue where an "invalid access to memory location" error may occur when changing a password using the AD users and computers console
+
 ## v1.1.55 19th Nov 2024
 ### Password Protection service
 - \[FEATURE\] Adds support for specifying a HTTP proxy on the `Sync-HashesFromHibp` cmdlet with a new `-ProxyAdddress` parameter
