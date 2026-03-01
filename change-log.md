@@ -1,5 +1,10 @@
 # Change log
 
+## v1.1.62 1st March 2026
+### Password Protection service
+- \[FIX\] Fixes an issue with the Test-IsAdPasswordCompromised cmdlet when running on 2025 domain controllers with 32k page size enabled
+- \[FIX\] Improves performance of the Sync-HashesFromHibp cmdlet and allows increased hash counts 
+
 ## v1.1.57 13th Dec 2024
 ### Password Protection service
 - \[FIX\] Fixes an issue where an "invalid access to memory location" error may occur when changing a password using the AD users and computers console
