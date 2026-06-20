@@ -11,4 +11,8 @@
 * [Audit existing passwords](audit-existing-passwords.md) - As an optional step, you can test the passwords of all existing users in your domain, to see if any of them are in the compromised password store. As these passwords have already been converted to a one-way hash in the Active Directory database, you cannot test other policies such as length and complexity against them.
 
 ## Troubleshooting
-* [Read the troubleshooting guide](../help-and-support/troubleshooting.md) for information on how to troubleshoot configuration errors. If you are still having trouble you can reach out to the community for [support via our GitHub issue tracker](../help-and-support/getting-support.md)
+* [Read the troubleshooting guide](../help-and-support/troubleshooting.md) for information on how to troubleshoot configuration errors. 
+
+{% hint style="info" %}
+**Still need help?** Community support is available via [GitHub Issues](https://github.com/lithnet/ad-password-protection/issues). For production environments, [enterprise support agreements](https://lithnet.io/products/password-protection) are also available.
+{% endhint %}
