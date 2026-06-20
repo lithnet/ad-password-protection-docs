@@ -1,7 +1,7 @@
 # About Lithnet Password Protection
 
 {% hint style="info" %}
-**Enterprise support available** — Running LPP in production? Enterprise support agreements provide direct access to the Lithnet engineering team for troubleshooting and configuration guidance. [Learn more](https://lithnet.io/products/password-protection).
+**Enterprise support available** — Running LPP in production? Enterprise support agreements provide direct access to the Lithnet engineering team for troubleshooting and configuration guidance. [Learn more](https://lithnet.io/products/password-protection?utm_source=docs&utm_medium=crosslink&utm_campaign=lpp-ups).
 {% endhint %}
 
 Lithnet Password Protection for Active Directory (LPP) enhances the options available to an organization wanting to ensure that all their Active Directory accounts have strong passwords.

@@ -6,4 +6,4 @@ If you are unable to find a solution to your issue, community support can be obt
 
 Lithnet also offer enterprise support plans for our products. You can deploy our tools with confidence that you have the backing of the dedicated Lithnet support team if you run into any issues, have questions, or need advice. 
 
-Reach out to us via our [contact form](https://lithnet.io/products/password-protection#requestaquote) for a quote and more information on this offering.
+Reach out to us via our [contact form](https://lithnet.io/products/password-protection?utm_source=docs&utm_medium=crosslink&utm_campaign=lpp-ups#requestaquote) for a quote and more information on this offering.

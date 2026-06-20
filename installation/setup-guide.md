@@ -14,5 +14,5 @@
 * [Read the troubleshooting guide](../help-and-support/troubleshooting.md) for information on how to troubleshoot configuration errors. 
 
 {% hint style="info" %}
-**Still need help?** Community support is available via [GitHub Issues](https://github.com/lithnet/ad-password-protection/issues). For production environments, [enterprise support agreements](https://lithnet.io/products/password-protection) are also available.
+**Still need help?** Community support is available via [GitHub Issues](https://github.com/lithnet/ad-password-protection/issues). For production environments, [enterprise support agreements](https://lithnet.io/products/password-protection?utm_source=docs&utm_medium=crosslink&utm_campaign=lpp-ups) are also available.
 {% endhint %}
