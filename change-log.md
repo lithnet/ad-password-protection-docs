@@ -2,21 +2,6 @@
 
 {% updates format="full" %}
 
-{% update date="2026-06-25" tags="feature" %}
-## v1.1.73
-
-Minor servicing release with dependency updates and installer improvements
-
-<mark style="color:green;"><i class="fa-sparkles">:sparkles:</i></mark> **Improved**
-- Adds support services info to the installer
-- Updates dependencies to the latest versions to ensure compatibility and security
-
-### Downloads
-
-- **Service** — [x64](https://packages.lithnet.io/win/password-protection/v1.1/x64/LithnetPasswordProtection-1.1.73.exe)
-
-{% endupdate %}
-
 {% update date="2026-03-01" tags="maintenance" %}
 ## v1.1.62
 
