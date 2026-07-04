@@ -2,6 +2,20 @@
 
 {% updates format="full" %}
 
+{% update date="2026-07-04" tags="maintenance" %}
+## v1.1.120
+
+Bug fix release
+
+<mark style="color:blue;"><i class="fa-wrench">:wrench:</i></mark> **Fixed**
+- Fixes an issue where the Sync-PasswordsFromHibp cmdlet throws an error due to a missing dependency
+
+### Downloads
+
+- **Service** — [x64](https://packages.lithnet.io/win/password-protection/v1.1/x64/LithnetPasswordProtection-1.1.120.exe)
+
+{% endupdate %}
+
 {% update date="2026-03-01" tags="maintenance" %}
 ## v1.1.62
 
