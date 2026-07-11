@@ -3,6 +3,7 @@
 ## Home
 
 * [About Lithnet Password Protection](README.md)
+* [Change log](change-log.md)
 
 ## Setup
 
@@ -23,7 +24,6 @@
 * [Troubleshooting steps](help-and-support/troubleshooting.md)
 * [Frequently asked questions](help-and-support/faqs.md)
 * [Getting support](help-and-support/getting-support.md)
-* [Change log](change-log.md)
 
 ## Advanced Help
 * [Powershell reference](advanced-help/powershell-reference/README.md)
