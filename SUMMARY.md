@@ -20,7 +20,6 @@
 * [Audit existing passwords](installation/audit-existing-passwords.md)
 
 ## Help & Support
-* [Testing the password filter](help-and-support/testing-the-password-filter.md)
 * [Troubleshooting steps](help-and-support/troubleshooting.md)
 * [Frequently asked questions](help-and-support/faqs.md)
 * [Getting support](help-and-support/getting-support.md)
