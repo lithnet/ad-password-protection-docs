@@ -39,8 +39,14 @@ The group policy settings are found under `Computer Configuration\Policies\Admin
 
 | Setting                                                 | Explanation                                                                                                                                                                                                                                                                                                 |
 | ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Password must match a specified regular expression      | When enabled, passwords that do not match the specified regular expression will be rejected. If disabled, or set to not configured, the password filter will not evaluate passwords against the regular expression. Note that the regular expression must match the entire password, not a substring of it. |
-| Passwords must not match a specified regular expression | When enabled, passwords that match the specified regular expression will be rejected. If disabled, or set to not configured, the password filter will not evaluate passwords against the regular expression. Note that the regular expression must match the entire password, not a substring of it.        |
+| Passwords must match a specified regular expression     | When enabled, passwords that do not match the specified regular expression will be rejected. If disabled, or set to not configured, the password filter will not evaluate passwords against the regular expression. The regular expression only needs to match part of the password. For example, `[0-9]` rejects `Summer` but not `Summer2026`, because only `Summer2026` contains a digit. To require the regular expression to match the entire password, start it with `^` and end it with `$`. |
+| Passwords must not match a specified regular expression | When enabled, passwords that match the specified regular expression will be rejected. If disabled, or set to not configured, the password filter will not evaluate passwords against the regular expression. The password is rejected if the regular expression matches any part of it. For example, `password` rejects `MyPassword1`. To reject only passwords that the regular expression matches in full, start it with `^` and end it with `$`, so that `^password$` rejects `Password` but not `MyPassword1`. |
+
+{% hint style="info" %}
+Regular expression matching isn't case-sensitive, so `[A-Z]` matches lowercase letters as well as uppercase letters. To require uppercase or lowercase letters, use a [length-based complexity policy](../advanced-help/configuring-a-length-based-complexity-policy.md) instead.
+
+If you anchor a regular expression that uses `|`, put the alternatives in parentheses. For example, `^(summer|winter)$` matches only `summer` and `winter`, but `^summer|winter$` matches any password that starts with `summer` or ends with `winter`.
+{% endhint %}
 
 ### Complexity policies
 

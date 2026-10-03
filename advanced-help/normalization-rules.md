@@ -4,6 +4,8 @@ The password filter provides the option of using a normalization technique, that
 
 If you take the example `P@ssw0rd` - a simple variant of the word `password` with some well-known substitutions. While the symbol, number, and uppercase letter are enough to keep most complexity filters happy, these well-known substitutions provide no additional difficulty to modern password cracking tools. Users will commonly make predictable modifications to dictionary words such as the common `Winter2018`. Adding `winter` to the banned store prevents the use of `Winter2018`, `Winter2019` and all other variants into the future.
 
+Normalization only applies to passwords that contain at least one letter. A password made up only of numbers and symbols is left unchanged.
+
 The normalization process applied to the string is as follows
 
 1. Lower case the string according to the invariant culture rules
@@ -22,6 +24,7 @@ The normalization process applied to the string is as follows
 | .         |              |
 | +         |              |
 | $         | s            |
+| 5         | s            |
 | 0         | o            |
 | 4         | a            |
 | 3         | e            |
@@ -44,4 +47,4 @@ The following table highlights some normalization results on common patterns
 | P@55w0rd!123 | password          |
 | Winter2017!  | winter            |
 | Lithnet123!  | lithnet           |
-| r3qu1r3m3nt5 | requirements      |
+| r3qu1r3m3nt5 | requirement       |
